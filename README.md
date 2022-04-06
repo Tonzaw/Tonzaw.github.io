@@ -1,2 +1,2 @@
-# Tonzaw.github.io
+# Sara Tuononen Photography Website
 www.saratuononen.com
