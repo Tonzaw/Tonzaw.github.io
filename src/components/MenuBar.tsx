@@ -22,7 +22,7 @@ const MenuBar = () => {
         width: "100%",
         display: "flex",
         flexDirection: "row",
-        marginTop: 60,
+        marginTop: 40,
         zIndex: 999
       }}
     >

@@ -3,6 +3,20 @@
   font-family: 'Libre Baskerville', regular;
 }
 
+h2 {
+  font-size: 1.25rem;
+  color: #6e6e6e;
+  letter-spacing: 0.5em;
+  font-family: Montserrat-Regular;
+}
+
+h3 {
+  font-size: 0.5rem;
+  color: #6e6e6e;
+  letter-spacing: 0.5em;
+  font-family: Montserrat-Regular;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -52,3 +66,6 @@ button.control-arrow:before {
   filter: brightness(100);
 }
 
+.imgTrans {
+  transition: opacity 1.25s .1s,transform .5s .1s,color .5s,-webkit-transform .5s .1s;
+}

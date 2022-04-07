@@ -14,7 +14,7 @@ const MenuItem = (props: { name: string; link: string; size: string }) => {
         <Link
           style={{
             color: "white",
-            fontSize: "1.25rem",
+            fontSize: "1.15rem",
             letterSpacing: "0.25em",
             textAlign: "center",
             verticalAlign: "middle",
