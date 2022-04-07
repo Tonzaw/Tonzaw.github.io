@@ -1,14 +1,23 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./css/index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./pages/App";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

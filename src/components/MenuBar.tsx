@@ -1,7 +1,18 @@
+import "../css/App.css";
 import MainLogo from "./MainLogo";
-import MenuTitle from "./MenuTitle";
+import MenuItem from "./MenuItem";
+import { useWindowDimensions } from "../common";
 
 const MenuBar = () => {
+  const { width } = useWindowDimensions();
+  let size = "big";
+  if (width > 1500) {
+    size = "big";
+  } else if (width <= 1500 && width > 900) {
+    size = "medium";
+  } else {
+    size = "small";
+  }
   return (
     <div
       style={{
@@ -11,14 +22,31 @@ const MenuBar = () => {
         width: "100%",
         display: "flex",
         flexDirection: "row",
-        marginTop: 80
+        marginTop: 60,
+        zIndex: 999
       }}
     >
-      <MenuTitle />
-      <MenuTitle />
-      <MainLogo />
-      <MenuTitle />
-      <MenuTitle />
+      <div
+        className="leftSideMenu"
+        style={{
+          flex: 3,
+          display: "flex",
+          flexDirection: "row"
+        }}
+      >
+        <MenuItem name="MINUSTA" link="contact" size={size} />
+        <MenuItem name="YHTEYSTIEDOT" link="contact" size={size} />
+        <MenuItem name="HINNASTO" link="contact" size={size} />
+      </div>
+      <MainLogo size={size} />
+      <div
+        className="rightSideMenu"
+        style={{ flex: 3, display: "flex", flexDirection: "row" }}
+      >
+        <MenuItem name="USEIN KYSYTYT KYSYMYKSET" link="contact" size={size} />
+        <MenuItem name="KUVAUSEHDOT" link="contact" size={size} />
+        <MenuItem name="MUUTA" link="contact" size={size} />
+      </div>
     </div>
   );
 };

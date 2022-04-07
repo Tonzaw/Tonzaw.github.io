@@ -43,3 +43,12 @@
   object-fit: cover;
   width: auto;
 }
+
+button.control-arrow:before {
+  display: none !important;
+}
+
+.arrow-img {
+  filter: brightness(100);
+}
+

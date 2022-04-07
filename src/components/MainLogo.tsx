@@ -1,24 +1,44 @@
-const MainLogo = () => {
+const MainLogo = (props: { size: string }) => {
   return (
     <div
       style={{
-        width: 300,
+        flex: 1,
         margin: 16,
-        padding: 16,
-        justifyItems: "center"
+        padding: 16
       }}
     >
-      <p
-        style={{
-          color: "white",
-          fontSize: "1.25rem",
-          letterSpacing: "0.25em",
-          textAlign: "center",
-          verticalAlign: "middle"
-        }}
-      >
-        SARA TUONONEN
-      </p>
+      {props.size === "big" && (
+        <div>
+          <p
+            style={{
+              color: "white",
+              fontSize: "1.75rem",
+              letterSpacing: "0.25em",
+              textAlign: "center",
+              verticalAlign: "middle",
+              textShadow: "1px 1px 1px black"
+            }}
+          >
+            SARA TUONONEN PHOTOGRAPHY
+          </p>
+        </div>
+      )}
+      {props.size === "medium" && (
+        <div>
+          <p
+            style={{
+              color: "white",
+              fontSize: "1rem",
+              letterSpacing: "0.15em",
+              textAlign: "center",
+              verticalAlign: "middle",
+              textShadow: "1px 1px 1px black"
+            }}
+          >
+            SARA TUONONEN PHOTOGRAPHY
+          </p>
+        </div>
+      )}
     </div>
   );
 };
