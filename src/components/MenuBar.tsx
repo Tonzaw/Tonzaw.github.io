@@ -19,33 +19,35 @@ const MenuBar = () => {
         position: "absolute",
         alignItems: "center",
         justifyContent: "center",
-        width: "100%",
+        marginTop: 40,
+        zIndex: 999,
+        overflow: "hidden",
         display: "flex",
         flexDirection: "row",
-        marginTop: 40,
-        zIndex: 999
+        width: "100%"
       }}
     >
       <div
         className="leftSideMenu"
-        style={{
-          flex: 3,
-          display: "flex",
-          flexDirection: "row"
-        }}
+        style={width > 1500 ? { width: 480 } : { width: 360 }}
       >
-        <MenuItem name="MINUSTA" link="contact" size={size} />
-        <MenuItem name="YHTEYSTIEDOT" link="contact" size={size} />
-        <MenuItem name="HINNASTO" link="contact" size={size} />
+        <MenuItem name="MINUSTA" link="contact" size={size} side="left" />
+        <MenuItem name="YHTEYSTIEDOT" link="contact" size={size} side="left" />
+        <MenuItem name="HINNASTO" link="contact" size={size} side="left" />
       </div>
       <MainLogo size={size} />
       <div
         className="rightSideMenu"
-        style={{ flex: 3, display: "flex", flexDirection: "row" }}
+        style={width > 1500 ? { width: 480 } : { width: 360 }}
       >
-        <MenuItem name="USEIN KYSYTYT KYSYMYKSET" link="contact" size={size} />
-        <MenuItem name="KUVAUSEHDOT" link="contact" size={size} />
-        <MenuItem name="MUUTA" link="contact" size={size} />
+        <MenuItem
+          name="KYSYMYKSIÄ & VASTAUKSIA"
+          link="contact"
+          size={size}
+          side="right"
+        />
+        <MenuItem name="KUVAUSEHDOT" link="contact" size={size} side="right" />
+        <MenuItem name="MUUTA" link="contact" size={size} side="right" />
       </div>
     </div>
   );

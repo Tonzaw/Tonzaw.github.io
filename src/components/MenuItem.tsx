@@ -1,25 +1,42 @@
 import { Link } from "react-router-dom";
+import "../css/App.css";
 
-const MenuItem = (props: { name: string; link: string; size: string }) => {
+const MenuItem = (props: {
+  name: string;
+  link: string;
+  size: string;
+  side: string;
+}) => {
   return (
     <div
-      style={{
-        flex: 1,
-        margin: 16,
-        alignSelf: "center",
-        float: "right"
-      }}
+      className="menuItemContainer"
+      style={
+        props.side === "left"
+          ? {
+              marginLeft: "auto",
+              alignSelf: "center",
+              marginRight: 8,
+              maxWidth: 150
+            }
+          : {
+              alignSelf: "center",
+              marginLeft: 8,
+              marginRight: "auto",
+              maxWidth: 150
+            }
+      }
     >
       {props.size === "big" && (
         <Link
+          className="menuItem"
           style={{
-            color: "white",
-            fontSize: "1.15rem",
-            letterSpacing: "0.25em",
+            color: "#6e6e6e",
+            fontSize: "0.90rem",
+            letterSpacing: "0.20em",
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
-            textShadow: "1px 1px 1px black"
+            fontWeight: "bold"
           }}
           to={props.link}
         >
@@ -28,14 +45,15 @@ const MenuItem = (props: { name: string; link: string; size: string }) => {
       )}
       {props.size === "medium" && (
         <Link
+          className="menuItem"
           style={{
-            color: "white",
+            color: "#6e6e6e",
             fontSize: "0.75rem",
             letterSpacing: "0.15em",
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
-            textShadow: "1px 1px 1px black"
+            fontWeight: "bold"
           }}
           to={props.link}
         >

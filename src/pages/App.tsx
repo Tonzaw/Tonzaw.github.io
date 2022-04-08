@@ -2,17 +2,9 @@ import "../css/App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
-import { useRef } from "react";
-
-const scrollToRef = (ref: any) =>
-  window.scrollTo({
-    top: ref.current.offsetTop,
-    behavior: "smooth"
-  });
+import { Link, Element } from "react-scroll";
 
 function App() {
-  const myRef = useRef(null);
-  const executeScroll = () => scrollToRef(myRef);
   return (
     <div className="App">
       <MenuBar />
@@ -74,7 +66,7 @@ function App() {
           }
         >
           <div>
-            <img src={require("../images/5.jpg")} alt="" />
+            <img src={require("../images/8.jpg")} alt="" />
           </div>
           <div>
             <img src={require("../images/6.jpg")} alt="" />
@@ -83,8 +75,13 @@ function App() {
             <img src={require("../images/7.jpg")} alt="" />
           </div>
         </Carousel>
-        <a
-          onClick={() => executeScroll()}
+        <Link
+          to="example-destination"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="some-class"
+          activeClass="some-active-class"
           style={{
             position: "absolute",
             width: "100%",
@@ -96,15 +93,15 @@ function App() {
             letterSpacing: "0.25em",
             textDecoration: "none",
             cursor: "pointer",
-            fontSize: "1.15rem",
+            fontSize: "1rem",
             textShadow: "1px 1px 1px black"
           }}
         >
           KATSO LISÄÄ
-        </a>
+        </Link>
       </div>
 
-      <div ref={myRef} style={{ height: "1200px" }}>
+      <Element name="example-destination" style={{ height: "1200px" }}>
         <div style={{ padding: "3rem 9rem" }}>
           <div>
             <h3>LYHYT OTSIKKO</h3>
@@ -126,7 +123,6 @@ function App() {
                 }}
               >
                 <img
-                  className="imgTrans"
                   style={{
                     width: "100%"
                   }}
@@ -151,7 +147,6 @@ function App() {
                   }}
                 >
                   <img
-                    className="imgTrans"
                     style={{
                       width: "100%"
                     }}
@@ -168,7 +163,6 @@ function App() {
                   }}
                 >
                   <img
-                    className="imgTrans"
                     style={{
                       width: "100%"
                     }}
@@ -204,7 +198,6 @@ function App() {
                   }}
                 >
                   <img
-                    className="imgTrans"
                     style={{
                       width: "100%"
                     }}
@@ -221,7 +214,6 @@ function App() {
                   }}
                 >
                   <img
-                    className="imgTrans"
                     style={{
                       width: "100%"
                     }}
@@ -237,7 +229,6 @@ function App() {
                 }}
               >
                 <img
-                  className="imgTrans"
                   style={{
                     width: "100%"
                   }}
@@ -248,7 +239,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </Element>
     </div>
   );
 }
