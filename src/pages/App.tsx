@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
 import { Link, Element } from "react-scroll";
+import Footer from "../components/Footer";
 
 function App() {
   return (
@@ -100,146 +101,148 @@ function App() {
           KATSO LISÄÄ
         </Link>
       </div>
-
-      <Element name="example-destination" style={{ height: "1200px" }}>
-        <div style={{ padding: "3rem 9rem" }}>
-          <div>
-            <h3>LYHYT OTSIKKO</h3>
-            <h2>PALJON PIDEMPI OTSIKKO</h2>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                padding: 10
-              }}
-            >
+      <div className="container">
+        <Element name="example-destination" style={{ height: "100vh" }}>
+          <div style={{ paddingTop: 42 }}>
+            <div>
+              <h3>LYHYT OTSIKKO</h3>
+              <h2>PALJON PIDEMPI OTSIKKO</h2>
+            </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
               <div
                 style={{
                   flex: 1,
-                  width: "100%"
-                }}
-              >
-                <img
-                  style={{
-                    width: "100%"
-                  }}
-                  src={require("../images/7.jpg")}
-                  alt=""
-                />
-              </div>
-              <div
-                style={{
-                  flex: 1,
-                  width: "100%",
                   display: "flex",
-                  flexDirection: "row"
+                  flexDirection: "column",
+                  padding: 10
                 }}
               >
                 <div
                   style={{
                     flex: 1,
-                    width: "50%",
-                    paddingTop: 10,
-                    paddingRight: 10
+                    width: "100%"
                   }}
                 >
                   <img
                     style={{
                       width: "100%"
                     }}
-                    src={require("../images/6.jpg")}
+                    src={require("../images/7.jpg")}
                     alt=""
                   />
                 </div>
                 <div
                   style={{
                     flex: 1,
-                    width: "50%",
-                    paddingTop: 10,
-                    paddingLeft: 10
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "row"
+                  }}
+                >
+                  <div
+                    style={{
+                      flex: 1,
+                      width: "50%",
+                      paddingTop: 10,
+                      paddingRight: 10
+                    }}
+                  >
+                    <img
+                      style={{
+                        width: "100%"
+                      }}
+                      src={require("../images/6.jpg")}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style={{
+                      flex: 1,
+                      width: "50%",
+                      paddingTop: 10,
+                      paddingLeft: 10
+                    }}
+                  >
+                    <img
+                      style={{
+                        width: "100%"
+                      }}
+                      src={require("../images/6.jpg")}
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: 10
+                }}
+              >
+                <div
+                  style={{
+                    flex: 1,
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "row"
+                  }}
+                >
+                  <div
+                    style={{
+                      flex: 1,
+                      width: "50%",
+                      paddingBottom: 10,
+                      paddingRight: 10
+                    }}
+                  >
+                    <img
+                      style={{
+                        width: "100%"
+                      }}
+                      src={require("../images/6.jpg")}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style={{
+                      flex: 1,
+                      width: "50%",
+                      paddingBottom: 10,
+                      paddingLeft: 10
+                    }}
+                  >
+                    <img
+                      style={{
+                        width: "100%"
+                      }}
+                      src={require("../images/6.jpg")}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  style={{
+                    flex: 1,
+                    width: "100%"
                   }}
                 >
                   <img
                     style={{
                       width: "100%"
                     }}
-                    src={require("../images/6.jpg")}
+                    src={require("../images/7.jpg")}
                     alt=""
                   />
                 </div>
               </div>
             </div>
-
-            <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                padding: 10
-              }}
-            >
-              <div
-                style={{
-                  flex: 1,
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "row"
-                }}
-              >
-                <div
-                  style={{
-                    flex: 1,
-                    width: "50%",
-                    paddingBottom: 10,
-                    paddingRight: 10
-                  }}
-                >
-                  <img
-                    style={{
-                      width: "100%"
-                    }}
-                    src={require("../images/6.jpg")}
-                    alt=""
-                  />
-                </div>
-                <div
-                  style={{
-                    flex: 1,
-                    width: "50%",
-                    paddingBottom: 10,
-                    paddingLeft: 10
-                  }}
-                >
-                  <img
-                    style={{
-                      width: "100%"
-                    }}
-                    src={require("../images/6.jpg")}
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                style={{
-                  flex: 1,
-                  width: "100%"
-                }}
-              >
-                <img
-                  style={{
-                    width: "100%"
-                  }}
-                  src={require("../images/7.jpg")}
-                  alt=""
-                />
-              </div>
-            </div>
           </div>
-        </div>
-      </Element>
+        </Element>
+      </div>
+      <Footer />
     </div>
   );
 }

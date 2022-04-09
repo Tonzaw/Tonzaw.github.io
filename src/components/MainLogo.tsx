@@ -7,45 +7,29 @@ const MainLogo = (props: { size: string }) => {
               float: "left",
               margin: 16,
               padding: 16,
-              width: 350
+              width: 250
             }
           : {
               float: "left",
               margin: 16,
               padding: 16,
-              width: 250
+              width: 150
             }
       }
     >
       {props.size === "big" && (
-        <p
-          style={{
-            color: "#6e6e6e",
-            fontSize: "1.75rem",
-            letterSpacing: "0.25em",
-            textAlign: "center",
-            verticalAlign: "middle",
-            width: "100%",
-            fontWeight: "bold"
-          }}
-        >
-          SARA TUONONEN
-        </p>
+        <img
+          src={require("../images/sara-logo.png")}
+          alt=""
+          style={{ height: "auto", width: 250 }}
+        />
       )}
       {props.size === "medium" && (
-        <p
-          style={{
-            color: "#6e6e6e",
-            fontSize: "1.25rem",
-            letterSpacing: "0.15em",
-            textAlign: "center",
-            verticalAlign: "middle",
-            width: "100%",
-            fontWeight: "bold"
-          }}
-        >
-          SARA TUONONEN
-        </p>
+        <img
+          src={require("../images/sara-logo.png")}
+          alt=""
+          style={{ height: "auto", width: 150 }}
+        />
       )}
     </div>
   );

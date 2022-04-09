@@ -3,6 +3,39 @@
   font-family: 'Libre Baskerville', regular;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
 h2 {
   font-size: 1.25rem;
   color: #6e6e6e;
