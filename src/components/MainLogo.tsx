@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainLogo = (props: { size: string }) => {
   return (
     <div
@@ -17,20 +19,22 @@ const MainLogo = (props: { size: string }) => {
             }
       }
     >
-      {props.size === "big" && (
-        <img
-          src={require("../images/sara-logo.png")}
-          alt=""
-          style={{ height: "auto", width: 250 }}
-        />
-      )}
-      {props.size === "medium" && (
-        <img
-          src={require("../images/sara-logo.png")}
-          alt=""
-          style={{ height: "auto", width: 150 }}
-        />
-      )}
+      <Link to={"/"}>
+        {props.size === "big" && (
+          <img
+            src={require("../images/sara-logo.png")}
+            alt=""
+            style={{ height: "auto", width: 250 }}
+          />
+        )}
+        {props.size === "medium" && (
+          <img
+            src={require("../images/sara-logo.png")}
+            alt=""
+            style={{ height: "auto", width: 150 }}
+          />
+        )}
+      </Link>
     </div>
   );
 };

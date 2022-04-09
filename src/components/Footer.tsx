@@ -109,6 +109,7 @@ const Footer = () => {
           <a
             href="https://instagram.com/saratuononen_photography"
             target="_blank"
+            rel="noreferrer"
             style={{
               flex: 1,
               color: "#6e6e6e",

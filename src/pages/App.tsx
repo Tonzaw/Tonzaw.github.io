@@ -2,13 +2,14 @@ import "../css/App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
-import { Link, Element } from "react-scroll";
-import Footer from "../components/Footer";
+import { Link } from "react-scroll";
+import Portfolio from "../components/Portfolio";
+import Footer2 from "../components/Footer2";
 
 function App() {
   return (
     <div className="App">
-      <MenuBar />
+      <MenuBar transparent={true} />
       <div>
         <Carousel
           className="Carousel"
@@ -22,7 +23,8 @@ function App() {
           transitionTime={1000}
           showStatus={false}
           dynamicHeight={false}
-          renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
+          showIndicators={false}
+          renderArrowPrev={(clickHandler, hasPrev) =>
             hasPrev && (
               <button
                 className="control-arrow control-prev"
@@ -42,7 +44,7 @@ function App() {
               </button>
             )
           }
-          renderArrowNext={(clickHandler, hasNext, labelNext) =>
+          renderArrowNext={(clickHandler, hasNext) =>
             hasNext && (
               <button
                 className="control-arrow control-next"
@@ -77,172 +79,43 @@ function App() {
           </div>
         </Carousel>
         <Link
-          to="example-destination"
+          to="portfolio"
           spy={true}
           smooth={true}
           duration={500}
-          className="some-class"
-          activeClass="some-active-class"
           style={{
             position: "absolute",
             width: "100%",
-            marginBottom: 40,
             zIndex: 998,
             bottom: 0,
             left: 0,
-            color: "white",
-            letterSpacing: "0.25em",
-            textDecoration: "none",
-            cursor: "pointer",
-            fontSize: "1rem",
-            textShadow: "1px 1px 1px black"
+            cursor: "pointer"
           }}
         >
-          KATSO LISÄÄ
+          <button
+            className="control-arrow control-next arrow-down"
+            style={{
+              alignItems: "center",
+              padding: 16,
+              background: "transparent",
+              border: 0,
+              cursor: "pointer"
+            }}
+          >
+            <img
+              className="arrow-img"
+              style={{
+                height: "40px",
+                width: "40px"
+              }}
+              src={require("../images/down.png")}
+              alt=""
+            />
+          </button>
         </Link>
       </div>
-      <div className="container">
-        <Element name="example-destination" style={{ height: "100vh" }}>
-          <div style={{ paddingTop: 42 }}>
-            <div>
-              <h3>LYHYT OTSIKKO</h3>
-              <h2>PALJON PIDEMPI OTSIKKO</h2>
-            </div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <div
-                style={{
-                  flex: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: 10
-                }}
-              >
-                <div
-                  style={{
-                    flex: 1,
-                    width: "100%"
-                  }}
-                >
-                  <img
-                    style={{
-                      width: "100%"
-                    }}
-                    src={require("../images/7.jpg")}
-                    alt=""
-                  />
-                </div>
-                <div
-                  style={{
-                    flex: 1,
-                    width: "100%",
-                    display: "flex",
-                    flexDirection: "row"
-                  }}
-                >
-                  <div
-                    style={{
-                      flex: 1,
-                      width: "50%",
-                      paddingTop: 10,
-                      paddingRight: 10
-                    }}
-                  >
-                    <img
-                      style={{
-                        width: "100%"
-                      }}
-                      src={require("../images/6.jpg")}
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    style={{
-                      flex: 1,
-                      width: "50%",
-                      paddingTop: 10,
-                      paddingLeft: 10
-                    }}
-                  >
-                    <img
-                      style={{
-                        width: "100%"
-                      }}
-                      src={require("../images/6.jpg")}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div
-                style={{
-                  flex: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: 10
-                }}
-              >
-                <div
-                  style={{
-                    flex: 1,
-                    width: "100%",
-                    display: "flex",
-                    flexDirection: "row"
-                  }}
-                >
-                  <div
-                    style={{
-                      flex: 1,
-                      width: "50%",
-                      paddingBottom: 10,
-                      paddingRight: 10
-                    }}
-                  >
-                    <img
-                      style={{
-                        width: "100%"
-                      }}
-                      src={require("../images/6.jpg")}
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    style={{
-                      flex: 1,
-                      width: "50%",
-                      paddingBottom: 10,
-                      paddingLeft: 10
-                    }}
-                  >
-                    <img
-                      style={{
-                        width: "100%"
-                      }}
-                      src={require("../images/6.jpg")}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div
-                  style={{
-                    flex: 1,
-                    width: "100%"
-                  }}
-                >
-                  <img
-                    style={{
-                      width: "100%"
-                    }}
-                    src={require("../images/7.jpg")}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Element>
-      </div>
-      <Footer />
+      <Portfolio />
+      <Footer2 />
     </div>
   );
 }

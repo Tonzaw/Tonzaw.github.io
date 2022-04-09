@@ -3,7 +3,7 @@ import MainLogo from "./MainLogo";
 import MenuItem from "./MenuItem";
 import { useWindowDimensions } from "../common";
 
-const MenuBar = () => {
+const MenuBar = (props: { transparent: boolean }) => {
   const { width } = useWindowDimensions();
   let size = "big";
   if (width > 1500) {
@@ -15,17 +15,30 @@ const MenuBar = () => {
   }
   return (
     <div
-      style={{
-        position: "absolute",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 40,
-        zIndex: 999,
-        overflow: "hidden",
-        display: "flex",
-        flexDirection: "row",
-        width: "100%"
-      }}
+      style={
+        props.transparent
+          ? {
+              position: "absolute",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 40,
+              zIndex: 999,
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "row",
+              width: "100%"
+            }
+          : {
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 40,
+              zIndex: 999,
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "row",
+              width: "100%"
+            }
+      }
     >
       <div
         className="leftSideMenu"

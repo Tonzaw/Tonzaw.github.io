@@ -1,7 +1,10 @@
 .App {
   text-align: center;
-  font-family: 'Libre Baskerville', regular;
 }
+
+.container p, label {
+    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif !important;
+} /* this affects every element in the body and the body itself */
 
 .container {
   width: 100%;
@@ -111,4 +114,40 @@ button.control-arrow:before {
 
 .menuItemContainer:hover {
   text-decoration: underline;
+}
+
+.arrow-down {
+  transition: all .25s ease-in;
+  opacity: .4;
+}
+
+.arrow-down:hover {
+  opacity: 1;
+}
+
+.formInput {
+  width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input, label {
+  display: block;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #272727;
+}
+
+input[type=submit]:hover {
+  background-color: #767676;
 }
