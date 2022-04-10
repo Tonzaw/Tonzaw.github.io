@@ -44,9 +44,9 @@ const MenuBar = (props: { transparent: boolean }) => {
         className="leftSideMenu"
         style={width > 1500 ? { width: 480 } : { width: 360 }}
       >
-        <MenuItem name="MINUSTA" link="contact" size={size} side="left" />
-        <MenuItem name="YHTEYSTIEDOT" link="contact" size={size} side="left" />
-        <MenuItem name="HINNASTO" link="contact" size={size} side="left" />
+        <MenuItem name="MINUSTA" link="/contact" size={size} side="left" />
+        <MenuItem name="YHTEYSTIEDOT" link="/contact" size={size} side="left" />
+        <MenuItem name="HINNASTO" link="/contact" size={size} side="left" />
       </div>
       <MainLogo size={size} />
       <div
@@ -55,12 +55,12 @@ const MenuBar = (props: { transparent: boolean }) => {
       >
         <MenuItem
           name="KYSYMYKSIÄ & VASTAUKSIA"
-          link="contact"
+          link="/contact"
           size={size}
           side="right"
         />
-        <MenuItem name="KUVAUSEHDOT" link="contact" size={size} side="right" />
-        <MenuItem name="MUUTA" link="contact" size={size} side="right" />
+        <MenuItem name="KUVAUSEHDOT" link="/contact" size={size} side="right" />
+        <MenuItem name="MUUTA" link="/contact" size={size} side="right" />
       </div>
     </div>
   );

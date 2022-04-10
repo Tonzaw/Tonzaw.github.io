@@ -25,7 +25,7 @@ const Footer = () => {
             <Link
               style={{
                 flex: 1,
-                color: "#6e6e6e",
+                color: "#272727",
                 fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textDecoration: "none",
@@ -39,7 +39,7 @@ const Footer = () => {
             <Link
               style={{
                 flex: 1,
-                color: "#6e6e6e",
+                color: "#272727",
                 fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textDecoration: "none",
@@ -53,7 +53,7 @@ const Footer = () => {
             <Link
               style={{
                 flex: 1,
-                color: "#6e6e6e",
+                color: "#272727",
                 fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textDecoration: "none",
@@ -72,7 +72,7 @@ const Footer = () => {
             href="mailto:info@saratuononen.com"
             style={{
               flex: 1,
-              color: "#6e6e6e",
+              color: "#272727",
               fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textDecoration: "none",
@@ -85,7 +85,7 @@ const Footer = () => {
           <p
             style={{
               flex: 1,
-              color: "#6e6e6e",
+              color: "#272727",
               fontSize: "0.75rem",
               letterSpacing: "0.15em",
               fontWeight: "bold",
@@ -112,7 +112,7 @@ const Footer = () => {
             rel="noreferrer"
             style={{
               flex: 1,
-              color: "#6e6e6e",
+              color: "#272727",
               fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textDecoration: "none",

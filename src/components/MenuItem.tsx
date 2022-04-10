@@ -30,7 +30,7 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#6e6e6e",
+            color: "#272727",
             fontSize: "0.90rem",
             letterSpacing: "0.20em",
             textAlign: "center",
@@ -47,7 +47,7 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#6e6e6e",
+            color: "#272727",
             fontSize: "0.75rem",
             letterSpacing: "0.15em",
             textAlign: "center",

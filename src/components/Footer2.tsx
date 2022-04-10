@@ -8,7 +8,7 @@ const Footer2 = () => {
     >
       <div
         style={{
-          background: "#6e6e6e",
+          background: "#272727",
           height: 1
         }}
       ></div>
@@ -19,7 +19,7 @@ const Footer2 = () => {
         href="mailto:info@saratuononen.com"
         style={{
           flex: 1,
-          color: "#6e6e6e",
+          color: "#272727",
           fontSize: "0.75rem",
           letterSpacing: "0.15em",
           textDecoration: "none",
@@ -32,7 +32,7 @@ const Footer2 = () => {
       <p
         style={{
           flex: 1,
-          color: "#6e6e6e",
+          color: "#272727",
           fontSize: "0.75rem",
           letterSpacing: "0.15em",
           fontWeight: "bold",
@@ -47,7 +47,7 @@ const Footer2 = () => {
         rel="noreferrer"
         style={{
           flex: 1,
-          color: "#6e6e6e",
+          color: "#272727",
           fontSize: "0.75rem",
           letterSpacing: "0.15em",
           textDecoration: "none",
