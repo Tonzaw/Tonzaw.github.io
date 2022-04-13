@@ -22,14 +22,14 @@ const MainLogo = (props: { size: string }) => {
       <Link to={"/"}>
         {props.size === "big" && (
           <img
-            src={require("../images/sara-logo.png")}
+            src={require("../images/icons/sara-logo2.png")}
             alt=""
             style={{ height: "auto", width: 250 }}
           />
         )}
         {props.size === "medium" && (
           <img
-            src={require("../images/sara-logo.png")}
+            src={require("../images/icons/sara-logo2.png")}
             alt=""
             style={{ height: "auto", width: 150 }}
           />

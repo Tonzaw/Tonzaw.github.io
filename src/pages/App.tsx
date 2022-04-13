@@ -2,9 +2,9 @@ import "../css/App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
-import { Link } from "react-scroll";
-import Portfolio from "../components/Portfolio";
+import { Element, Link } from "react-scroll";
 import Footer2 from "../components/Footer2";
+import Tabs from "../components/Tabs";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
                 <img
                   className="arrow-img"
                   style={{ height: "40px", width: "40px", color: "white" }}
-                  src={require("../images/prev.png")}
+                  src={require("../images/icons/prev.png")}
                   alt=""
                 />
               </button>
@@ -61,7 +61,7 @@ function App() {
                     height: "40px",
                     width: "40px"
                   }}
-                  src={require("../images/next.png")}
+                  src={require("../images/icons/next.png")}
                   alt=""
                 />
               </button>
@@ -69,13 +69,13 @@ function App() {
           }
         >
           <div>
-            <img src={require("../images/8.jpg")} alt="" />
+            <img src={require("../images/newborn/newborn3.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/6.jpg")} alt="" />
+            <img src={require("../images/couples/6.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/7.jpg")} alt="" />
+            <img src={require("../images/couples/7.jpg")} alt="" />
           </div>
         </Carousel>
         <Link
@@ -108,13 +108,15 @@ function App() {
                 height: "40px",
                 width: "40px"
               }}
-              src={require("../images/down.png")}
+              src={require("../images/icons/down.png")}
               alt=""
             />
           </button>
         </Link>
       </div>
-      <Portfolio />
+      <Element name="portfolio" style={{ marginBottom: 84, paddingTop: 24 }}>
+        <Tabs />
+      </Element>
       <Footer2 />
     </div>
   );

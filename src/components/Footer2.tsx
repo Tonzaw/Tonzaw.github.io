@@ -56,7 +56,7 @@ const Footer2 = () => {
         }}
       >
         <img
-          src={require("../images/instagram.png")}
+          src={require("../images/icons/instagram.png")}
           alt=""
           style={{ height: 18, width: 18 }}
         />

@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.container p, label {
-    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif !important;
+p, label, li {
+    font-family: "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif !important;
 } /* this affects every element in the body and the body itself */
 
 .container {
@@ -151,13 +151,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #767676;
 }
-
-.Tabs {
-  width: 100%;
-  height: auto;
-  min-height: 400px;
-  margin: 3.5rem auto 1.5rem;
-}
  
 /* Tab Navigation */
 ul.nav {
@@ -167,6 +160,7 @@ ul.nav {
   justify-content: center;
   padding-left: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
  
 ul.nav li {
@@ -176,15 +170,11 @@ ul.nav li {
   text-align: center;
   cursor: pointer;
   transition: all 0.7s;
-}
-
- 
-ul.nav li:hover {
-  /* background: rgba(50, 224, 196, 0.15); */
+  color: #6e6e6e;
 }
  
 ul.nav li.active {
-  /* background: #39A2DB; */
+  color: #272727;
 }
  
 /* Tab Content Styles */
@@ -199,4 +189,11 @@ ul.nav li.active {
   background: #272727;
   position: absolute;
   transition: all 0.5s;
+  
+}
+
+@media (max-width: 767px) {
+  .stripe {
+    height: 4px;
+  }
 }
