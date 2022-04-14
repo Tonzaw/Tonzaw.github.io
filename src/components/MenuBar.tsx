@@ -21,22 +21,22 @@ const MenuBar = (props: { transparent: boolean }) => {
               position: "absolute",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 40,
               zIndex: 999,
               overflow: "hidden",
               display: "flex",
               flexDirection: "row",
-              width: "100%"
+              width: "100%",
+              marginBottom: 16
             }
           : {
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 40,
               zIndex: 999,
               overflow: "hidden",
               display: "flex",
               flexDirection: "row",
-              width: "100%"
+              width: "100%",
+              marginBottom: 16
             }
       }
     >
@@ -44,7 +44,7 @@ const MenuBar = (props: { transparent: boolean }) => {
         className="leftSideMenu"
         style={width > 1500 ? { width: 480 } : { width: 360 }}
       >
-        <MenuItem name="MINUSTA" link="/contact" size={size} side="left" />
+        <MenuItem name="MINUSTA" link="/about" size={size} side="left" />
         <MenuItem name="YHTEYSTIEDOT" link="/contact" size={size} side="left" />
         <MenuItem name="HINNASTO" link="/contact" size={size} side="left" />
       </div>

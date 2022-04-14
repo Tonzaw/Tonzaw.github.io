@@ -8,13 +8,11 @@ const MainLogo = (props: { size: string }) => {
           ? {
               float: "left",
               margin: 16,
-              padding: 16,
-              width: 250
+              width: 200
             }
           : {
               float: "left",
               margin: 16,
-              padding: 16,
               width: 150
             }
       }
@@ -24,7 +22,7 @@ const MainLogo = (props: { size: string }) => {
           <img
             src={require("../images/icons/sara-logo2.png")}
             alt=""
-            style={{ height: "auto", width: 250 }}
+            style={{ height: "auto", width: 200 }}
           />
         )}
         {props.size === "medium" && (

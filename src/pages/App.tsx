@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
 import { Element, Link } from "react-scroll";
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import Tabs from "../components/Tabs";
 
 function App() {
@@ -72,10 +72,10 @@ function App() {
             <img src={require("../images/newborn/newborn3.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/6.jpg")} alt="" />
+            <img src={require("../images/couples/couples4.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/7.jpg")} alt="" />
+            <img src={require("../images/couples/couples18.jpg")} alt="" />
           </div>
         </Carousel>
         <Link
@@ -114,10 +114,13 @@ function App() {
           </button>
         </Link>
       </div>
-      <Element name="portfolio" style={{ marginBottom: 84, paddingTop: 24 }}>
-        <Tabs />
-      </Element>
-      <Footer2 />
+      <div style={{ height: "100vh" }}>
+        <Element name="portfolio" style={{ marginBottom: 84, paddingTop: 24 }}>
+          <Tabs />
+        </Element>
+      </div>
+
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 const PortfolioRow = (props: { leftImage: string; rightImage: string }) => {
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ display: "flex", flexDirection: "row", marginBottom: 10 }}>
       <div
         style={{
           flex: 1,

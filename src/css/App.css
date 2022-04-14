@@ -14,6 +14,10 @@ p, label, li {
   margin-left: auto;
 }
 
+img {
+  vertical-align: middle;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -40,10 +44,9 @@ p, label, li {
 }
 
 h2 {
-  font-size: 1.25rem;
   color: #272727;
-  letter-spacing: 0.5em;
-  font-family: Montserrat-Regular;
+  letter-spacing: 0.3em;
+  text-align: center;
 }
 
 h3 {
@@ -176,12 +179,6 @@ ul.nav li {
 ul.nav li.active {
   color: #272727;
 }
- 
-/* Tab Content Styles */
-.TabContent {
-  font-size: 2rem;
-  text-align: center;
-}
 
 .stripe {
   width: 132px;
@@ -196,4 +193,9 @@ ul.nav li.active {
   .stripe {
     height: 4px;
   }
+}
+
+.aboutLi {
+  float: left;
+  width: 50%;
 }

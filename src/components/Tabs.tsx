@@ -1,7 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import BoudoirPortfolio from "./BoudoirPortfolio";
 import CouplesPortfolio from "./CouplesPortfolio";
+import FamilyPortfolio from "./FamilyPortfolio";
 import NewbornPortfolio from "./NewbornPortfolio";
+import PetsPortfolio from "./PetsPortfolio";
+import PortraitsPortfolio from "./PortraitsPortfolio";
 import TabContent from "./TabContent";
 
 const Tabs = () => {
@@ -24,46 +27,41 @@ const Tabs = () => {
       }
     }
     function handleResize() {
-      if (left === 0) {
-        let elem = tabNavItem1.current;
-        if (elem != null) {
-          setLeft(elem.getBoundingClientRect().x + 16);
-          setWidth(elem.offsetWidth - 32);
-        }
+      let elem = getSelectedElement(activeTab);
+      if (elem != null) {
+        setLeft(elem.getBoundingClientRect().x + 16);
+        setWidth(elem.offsetWidth - 32);
       }
     }
     window.addEventListener("resize", handleResize);
-  }, [left]);
+  }, [left, activeTab]);
 
   const handleClick = (id: string) => {
     setActiveTab(id);
-    let elem = tabNavItem1.current;
-    switch (id) {
-      case "tab1":
-        elem = tabNavItem1.current;
-        break;
-      case "tab2":
-        elem = tabNavItem2.current;
-        break;
-      case "tab3":
-        elem = tabNavItem3.current;
-        break;
-      case "tab4":
-        elem = tabNavItem4.current;
-        break;
-      case "tab5":
-        elem = tabNavItem5.current;
-        break;
-      case "tab6":
-        elem = tabNavItem6.current;
-        break;
-      default:
-        break;
-    }
+    let elem = getSelectedElement(id);
 
     if (elem != null) {
       setLeft(elem.getBoundingClientRect().x + 16);
       setWidth(elem.offsetWidth - 32);
+    }
+  };
+
+  const getSelectedElement = (id: string) => {
+    switch (id) {
+      case "tab1":
+        return tabNavItem1.current;
+      case "tab2":
+        return tabNavItem2.current;
+      case "tab3":
+        return tabNavItem3.current;
+      case "tab4":
+        return tabNavItem4.current;
+      case "tab5":
+        return tabNavItem5.current;
+      case "tab6":
+        return tabNavItem6.current;
+      default:
+        return tabNavItem1.current;
     }
   };
 
@@ -122,16 +120,16 @@ const Tabs = () => {
           <CouplesPortfolio />
         </TabContent>
         <TabContent id="tab2" activeTab={activeTab}>
-          <CouplesPortfolio />
+          <FamilyPortfolio />
         </TabContent>
         <TabContent id="tab3" activeTab={activeTab}>
           <BoudoirPortfolio />
         </TabContent>
         <TabContent id="tab4" activeTab={activeTab}>
-          <CouplesPortfolio />
+          <PetsPortfolio />
         </TabContent>
         <TabContent id="tab5" activeTab={activeTab}>
-          <CouplesPortfolio />
+          <PortraitsPortfolio />
         </TabContent>
         <TabContent id="tab6" activeTab={activeTab}>
           <NewbornPortfolio />

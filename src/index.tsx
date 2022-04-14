@@ -6,6 +6,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import App from "./pages/App";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import About from "./pages/About";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>
