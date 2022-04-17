@@ -2,8 +2,10 @@ import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import ContactForm from "../components/ContactForm";
 import "../css/App.css";
+import { useWindowDimensions } from "../common";
 
 function Contact() {
+  const { width } = useWindowDimensions();
   return (
     <div>
       <MenuBar transparent={false} />
@@ -26,14 +28,32 @@ function Contact() {
         <div
           style={{
             display: "flex",
+            flexWrap: "wrap",
             flexDirection: "row"
           }}
         >
-          <div style={{ flex: 1, marginTop: 16, marginRight: 12 }}>
+          <div
+            style={
+              width >= 1008
+                ? {
+                    flex: 1,
+                    marginTop: 16,
+                    marginRight: 12,
+                    minWidth: 468,
+                    order: 0
+                  }
+                : {
+                    flex: 1,
+                    marginTop: 16,
+                    minWidth: 468,
+                    order: 1
+                  }
+            }
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d125966.61778411511!2d22.294243104859447!3d60.441444858762345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1649517670326!5m2!1sfi!2sfi"
               width="100%"
-              height="600"
+              height={width >= 1008 ? "600" : "200"}
               style={{ border: 0 }}
               loading="lazy"
               tabIndex={0}
@@ -41,7 +61,25 @@ function Contact() {
               title="map"
             />
           </div>
-          <div style={{ flex: 1, marginTop: 16, marginLeft: 12 }}>
+          <div
+            style={
+              width >= 1008
+                ? {
+                    flex: 1,
+                    marginTop: 16,
+                    marginLeft: 12,
+                    minWidth: 468,
+                    order: 1
+                  }
+                : {
+                    flex: 1,
+                    marginTop: 16,
+                    minWidth: 468,
+                    order: 0,
+                    marginBottom: 24
+                  }
+            }
+          >
             <ContactForm />
           </div>
         </div>

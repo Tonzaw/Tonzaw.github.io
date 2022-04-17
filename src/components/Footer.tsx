@@ -12,9 +12,9 @@ const Footer = () => {
           height: 1
         }}
       ></div>
-      <h4 style={{ fontSize: 16, letterSpacing: "0.3rem", marginBottom: 16 }}>
+      <h3 style={{ fontSize: 16, letterSpacing: "0.2rem", marginBottom: 16 }}>
         YHTEYSTIEDOT
-      </h4>
+      </h3>
       <a
         href="mailto:info@saratuononen.com"
         style={{
@@ -33,7 +33,7 @@ const Footer = () => {
         style={{
           flex: 1,
           color: "#272727",
-          fontSize: "0.75rem",
+          fontSize: "0.8rem",
           letterSpacing: "0.15em",
           fontWeight: "bold",
           marginBottom: 16
@@ -58,7 +58,7 @@ const Footer = () => {
         <img
           src={require("../images/icons/instagram.png")}
           alt=""
-          style={{ height: 18, width: 18 }}
+          style={{ height: 20, width: 20 }}
         />
       </a>
     </div>

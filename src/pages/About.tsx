@@ -1,8 +1,10 @@
+import { useWindowDimensions } from "../common";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
 function About() {
+  const { width } = useWindowDimensions();
   return (
     <div>
       <MenuBar transparent={false} />
@@ -13,28 +15,33 @@ function About() {
           marginBottom: 64
         }}
       >
-        <ul
-          style={{
-            listStyleType: "none",
-            margin: 0,
-            padding: 0,
-            overflow: "hidden",
-            background: "#FAEBD7"
-          }}
-        >
-          <li className="aboutLi">
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <div
+            style={
+              width > 1008
+                ? {
+                    width: "50%",
+                    height: "auto"
+                  }
+                : {
+                    width: "100%",
+                    height: "auto"
+                  }
+            }
+          >
             <div
-              style={{
-                height: "auto",
-                padding: 15
-              }}
+              style={
+                width > 1008
+                  ? {
+                      paddingRight: 12
+                    }
+                  : {}
+              }
             >
-              <h2>Kuka olen?</h2>
+              <h2>KUKA OLEN?</h2>
               <p
                 style={{
-                  textAlign: "justify",
-                  paddingLeft: 12,
-                  paddingRight: 12
+                  textAlign: "justify"
                 }}
               >
                 Ihanaa kun löysit sivuilleni! Sara Tuononen Photographyn takaa
@@ -63,40 +70,94 @@ function About() {
                 yhteyttä niin suunnitellaan kuvaus juuri sinun tarpeillesi!
               </p>
             </div>
-          </li>
-          <li className="aboutLi">
-            <img
-              style={{
-                width: "100%",
-                height: "auto"
-              }}
-              src={require("../images/couples/couples2.jpg")}
-              alt=""
-            />
-          </li>
-        </ul>
+          </div>
+          <div
+            style={
+              width > 1008
+                ? {
+                    width: "50%",
+                    height: "auto",
+                    display: "flex",
+                    alignItems: "center"
+                  }
+                : {
+                    width: "100%",
+                    height: "auto",
+                    display: "flex",
+                    alignItems: "center"
+                  }
+            }
+          >
+            <div style={width > 1008 ? { paddingLeft: 12 } : {}}>
+              <img
+                style={{
+                  width: "100%"
+                }}
+                src={require("../images/couples/couples2.jpg")}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
 
-        <h2>Asiakaspalautteet</h2>
-        <div>
-          <p style={{ fontStyle: "italic" }}>
-            "Etsimme kuvaajaa, jonka näkemys ja tyyli kohtaisi omamme ja
-            löysimme Saran instagramin kautta. Hänen kanssa oli enemmän kuin
-            miellyttävää asioida, vastaukset saimme kysymyksiin nopeasti ja
-            ideoita löytyi. Itse h-hetkenä valokuvaus hoitui sulavasti ja
-            vahvalla ammattitaidolla. Valmiit kuvat saimme nopeasti ja ne olivat
-            täynnä raikkautta ja luonnollisuutta - juuri sitä mitä kuvilta
-            toivoimme! Lämpimästi voin suositella Saraa kuvaamaan omat tärkeät
-            hetkesi. Uusia kuvauksia odottaen."
-          </p>
-          <p>-Sanni</p>
-          <p style={{ fontStyle: "italic" }}>
-            "Saran kuvattavana kamera unohtui. Koin kuvaushetken kiireettömänä,
-            vapauttavana, rentona ja miellyttävänä, hauskanakin! Oma epävarmuus
-            ja vaivautuneisuus ajatuksesta olla kuvassa haihtui. Kokemus oli
-            itselleni terapeuttinen, ensi kertaa katson omaa kuvaa hymyillen,
-            itsevarmempana ja itsestäni pitäen ja iloiten! Kiitos Sara!"
-          </p>
-          <p>-Tiina</p>
+        <h2 style={{ marginTop: 24, marginBottom: 12 }}>ASIAKASPALAUTTEET</h2>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap"
+          }}
+        >
+          <div
+            className="feedbackDiv"
+            style={
+              width > 1008
+                ? {
+                    width: "50%"
+                  }
+                : {
+                    width: "100%"
+                  }
+            }
+          >
+            <p
+              className="feedback"
+              style={{ fontStyle: "italic", textAlign: "center" }}
+            >
+              "Etsimme kuvaajaa, jonka näkemys ja tyyli kohtaisi omamme ja
+              löysimme Saran instagramin kautta. Hänen kanssa oli enemmän kuin
+              miellyttävää asioida, vastaukset saimme kysymyksiin nopeasti ja
+              ideoita löytyi. Itse h-hetkenä valokuvaus hoitui sulavasti ja
+              vahvalla ammattitaidolla. Valmiit kuvat saimme nopeasti ja ne
+              olivat täynnä raikkautta ja luonnollisuutta - juuri sitä mitä
+              kuvilta toivoimme! Lämpimästi voin suositella Saraa kuvaamaan omat
+              tärkeät hetkesi. Uusia kuvauksia odottaen."
+            </p>
+            <p style={{ textAlign: "center" }}>-Sanni</p>
+          </div>
+          <div
+            style={
+              width > 1008
+                ? {
+                    width: "50%"
+                  }
+                : {
+                    width: "100%"
+                  }
+            }
+          >
+            <p
+              className="feedback"
+              style={{ fontStyle: "italic", textAlign: "center" }}
+            >
+              "Saran kuvattavana kamera unohtui. Koin kuvaushetken
+              kiireettömänä, vapauttavana, rentona ja miellyttävänä,
+              hauskanakin! Oma epävarmuus ja vaivautuneisuus ajatuksesta olla
+              kuvassa haihtui. Kokemus oli itselleni terapeuttinen, ensi kertaa
+              katson omaa kuvaa hymyillen, itsevarmempana ja itsestäni pitäen ja
+              iloiten! Kiitos Sara!"
+            </p>
+            <p style={{ textAlign: "center" }}>-Tiina</p>
+          </div>
         </div>
       </div>
       <Footer />

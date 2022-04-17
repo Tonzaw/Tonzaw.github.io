@@ -114,12 +114,11 @@ function App() {
           </button>
         </Link>
       </div>
-      <div style={{ height: "100vh" }}>
-        <Element name="portfolio" style={{ marginBottom: 84, paddingTop: 24 }}>
+      <div style={{ minHeight: "100vh" }}>
+        <Element name="portfolio" style={{ paddingTop: 24 }}>
           <Tabs />
         </Element>
       </div>
-
       <Footer />
     </div>
   );

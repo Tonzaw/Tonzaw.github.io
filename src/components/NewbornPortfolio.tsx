@@ -1,5 +1,6 @@
 import { Slide } from "react-awesome-reveal";
 import PortfolioRow from "./PortfolioRow";
+import ToTopButton from "./ToTopButton";
 
 const NewbornPortfolio = () => {
   return (
@@ -28,6 +29,7 @@ const NewbornPortfolio = () => {
           />
         </div>
       </Slide>
+      <ToTopButton />
     </div>
   );
 };

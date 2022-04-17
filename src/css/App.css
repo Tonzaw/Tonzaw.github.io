@@ -2,8 +2,17 @@
   text-align: center;
 }
 
-p, label, li {
-    font-family: "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif !important;
+h2, h3, h4 {
+  font-family: "CormorantGaramond-Bold";
+}
+
+p {
+  font-family: "Roboto-Regular";
+  line-height: 1.4rem;
+}
+
+label, li, a {
+  font-family: "Roboto-Regular";
 } /* this affects every element in the body and the body itself */
 
 .container {
@@ -14,25 +23,51 @@ p, label, li {
   margin-left: auto;
 }
 
+@font-face {
+  font-family: 'Antonio-Bold';
+  src: local('Antonio-Bold'), url(../fonts/Antonio-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CrimsonPro-VariableFont_wght';
+  src: local('CrimsonPro-VariableFont_wght'), url(../fonts/CrimsonPro-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-Bold';
+  src: local('CormorantGaramond-Bold'), url(../fonts/CormorantGaramond-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'), url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
 img {
   vertical-align: middle;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1205px) {
   .container {
     max-width: 1140px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1008px) and (max-width: 1205px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 1008px) {
   .container {
     max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -45,14 +80,14 @@ img {
 
 h2 {
   color: #272727;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   text-align: center;
 }
 
 h3 {
   font-size: 0.75rem;
   color: #272727;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.1em;
   font-family: Montserrat-Regular;
 }
 
@@ -115,8 +150,9 @@ button.control-arrow:before {
   display: flex;
 }
 
-.menuItemContainer:hover {
+.menuItem:hover {
   text-decoration: underline;
+  color: #272727 !important;
 }
 
 .arrow-down {
@@ -174,6 +210,8 @@ ul.nav li {
   cursor: pointer;
   transition: all 0.7s;
   color: #6e6e6e;
+  font-family: "Antonio-Bold";
+  letter-spacing: 0.05rem;
 }
  
 ul.nav li.active {
@@ -186,7 +224,6 @@ ul.nav li.active {
   background: #272727;
   position: absolute;
   transition: all 0.5s;
-  
 }
 
 @media (max-width: 767px) {
@@ -198,4 +235,29 @@ ul.nav li.active {
 .aboutLi {
   float: left;
   width: 50%;
+}
+
+.toTopButton {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  color: #272727;
+  font-weight: bold;
+  background-color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+  margin-top: 32px;
+  margin-bottom: 42px;
+  height: 60px;
+  width: 60px;
+}
+
+.toTopButton:hover {
+  top: -4px;
+  background-color: #f5f5f5;
+}
+
+.feedback {
+  margin-left: 12px;
+  margin-right: 12px;
 }

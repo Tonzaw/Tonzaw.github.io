@@ -6,9 +6,9 @@ import { useWindowDimensions } from "../common";
 const MenuBar = (props: { transparent: boolean }) => {
   const { width } = useWindowDimensions();
   let size = "big";
-  if (width > 1500) {
+  if (width >= 1008) {
     size = "big";
-  } else if (width <= 1500 && width > 900) {
+  } else if (width < 1008 && width > 767) {
     size = "medium";
   } else {
     size = "small";
@@ -42,7 +42,7 @@ const MenuBar = (props: { transparent: boolean }) => {
     >
       <div
         className="leftSideMenu"
-        style={width > 1500 ? { width: 480 } : { width: 360 }}
+        style={width > 1008 ? { width: 480 } : { width: 360 }}
       >
         <MenuItem name="MINUSTA" link="/about" size={size} side="left" />
         <MenuItem name="YHTEYSTIEDOT" link="/contact" size={size} side="left" />
@@ -51,7 +51,7 @@ const MenuBar = (props: { transparent: boolean }) => {
       <MainLogo size={size} />
       <div
         className="rightSideMenu"
-        style={width > 1500 ? { width: 480 } : { width: 360 }}
+        style={width > 1008 ? { width: 480 } : { width: 360 }}
       >
         <MenuItem
           name="KYSYMYKSIÄ & VASTAUKSIA"

@@ -14,12 +14,12 @@ const MenuItem = (props: {
         props.side === "left"
           ? {
               marginLeft: "auto",
-              alignSelf: "center",
+              textAlign: "center",
               marginRight: 8,
               maxWidth: 150
             }
           : {
-              alignSelf: "center",
+              textAlign: "center",
               marginLeft: 8,
               marginRight: "auto",
               maxWidth: 150
@@ -30,7 +30,7 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#272727",
+            color: "#6e6e6e",
             fontSize: "0.90rem",
             letterSpacing: "0.20em",
             textAlign: "center",
@@ -47,7 +47,7 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#272727",
+            color: "#6e6e6e",
             fontSize: "0.75rem",
             letterSpacing: "0.15em",
             textAlign: "center",

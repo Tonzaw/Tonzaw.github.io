@@ -34,6 +34,7 @@ const Tabs = () => {
       }
     }
     window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
   }, [left, activeTab]);
 
   const handleClick = (id: string) => {
