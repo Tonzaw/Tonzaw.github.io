@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/saratuononen-photography/static/css/main.3e703bb6.css",
-    "main.js": "/saratuononen-photography/static/js/main.17e982b7.js",
+    "main.css": "/saratuononen-photography/static/css/main.757edf2d.css",
+    "main.js": "/saratuononen-photography/static/js/main.05a48fe8.js",
     "static/js/787.c75175ec.chunk.js": "/saratuononen-photography/static/js/787.c75175ec.chunk.js",
     "static/media/family11.jpg": "/saratuononen-photography/static/media/family11.340781270b5809e8319a.jpg",
     "static/media/family12.jpg": "/saratuononen-photography/static/media/family12.d95ab09b860ab0cdbfc0.jpg",
@@ -66,13 +66,17 @@
     "static/media/portraits4.jpg": "/saratuononen-photography/static/media/portraits4.17fb9f1973e59aeb3cbb.jpg",
     "static/media/newborn1.jpg": "/saratuononen-photography/static/media/newborn1.858066f103ec0b8d6bae.jpg",
     "static/media/newborn3.jpg": "/saratuononen-photography/static/media/newborn3.7df97b243120787051d1.jpg",
+    "static/media/CormorantGaramond-Bold.ttf": "/saratuononen-photography/static/media/CormorantGaramond-Bold.5af085244ab6774c0fd9.ttf",
+    "static/media/CrimsonPro-VariableFont_wght.ttf": "/saratuononen-photography/static/media/CrimsonPro-VariableFont_wght.b184e12ab9c5c6bed9b5.ttf",
+    "static/media/Roboto-Regular.ttf": "/saratuononen-photography/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Antonio-Bold.ttf": "/saratuononen-photography/static/media/Antonio-Bold.7c89038493d2f1ce9ce6.ttf",
     "index.html": "/saratuononen-photography/index.html",
-    "main.3e703bb6.css.map": "/saratuononen-photography/static/css/main.3e703bb6.css.map",
-    "main.17e982b7.js.map": "/saratuononen-photography/static/js/main.17e982b7.js.map",
+    "main.757edf2d.css.map": "/saratuononen-photography/static/css/main.757edf2d.css.map",
+    "main.05a48fe8.js.map": "/saratuononen-photography/static/js/main.05a48fe8.js.map",
     "787.c75175ec.chunk.js.map": "/saratuononen-photography/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e703bb6.css",
-    "static/js/main.17e982b7.js"
+    "static/css/main.757edf2d.css",
+    "static/js/main.05a48fe8.js"
   ]
 }
