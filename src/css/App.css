@@ -8,7 +8,7 @@ h2, h3, h4 {
 
 p {
   font-family: "Roboto-Regular";
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 label, li, a {
@@ -82,6 +82,7 @@ h2 {
   color: #272727;
   letter-spacing: 0.1em;
   text-align: center;
+  font-size: 32px;
 }
 
 h3 {
@@ -89,6 +90,7 @@ h3 {
   color: #272727;
   letter-spacing: 0.1em;
   font-family: Montserrat-Regular;
+  font-size: 16px;
 }
 
 .App-logo {

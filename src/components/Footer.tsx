@@ -12,7 +12,7 @@ const Footer = () => {
           height: 1
         }}
       ></div>
-      <h3 style={{ fontSize: 16, letterSpacing: "0.2rem", marginBottom: 16 }}>
+      <h3 style={{ letterSpacing: "0.2rem", marginBottom: 16 }}>
         YHTEYSTIEDOT
       </h3>
       <a

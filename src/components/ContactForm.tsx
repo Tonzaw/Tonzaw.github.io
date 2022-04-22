@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = () => {
+const ContactForm = (props: { onEmailSent: Function }) => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
@@ -17,13 +17,16 @@ const ContactForm = () => {
         .then(
           (result) => {
             console.log(result.text);
+            props.onEmailSent(true);
           },
           (error) => {
             console.log(error.text);
+            props.onEmailSent(false);
           }
         );
     } else {
-      console.log("error");
+      console.log("error: form.current is null or undefined");
+      props.onEmailSent(false);
     }
   };
 

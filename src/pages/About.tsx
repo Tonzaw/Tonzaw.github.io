@@ -41,7 +41,8 @@ function About() {
               <h2>KUKA OLEN?</h2>
               <p
                 style={{
-                  textAlign: "justify"
+                  textAlign: "justify",
+                  fontSize: 18
                 }}
               >
                 Ihanaa kun löysit sivuilleni! Sara Tuononen Photographyn takaa
@@ -55,19 +56,34 @@ function About() {
                 teininä kavereita kuvaillessa. Palo roihahti yhä enemmän, kun
                 huomasin miten iso merkitys kuvilla voi toiselle olla. Jos
                 pystyn kohottamaan jonkun itsetuntoa, tai auttamaan näkemään
-                itsensä lempeämmin, on se sanoinkuvaamattoman palkitsevaa. Mitä
-                enemmän vuosia on vierinyt, olen alkanut paremmin ymmärtämään
-                ohikiitävien hetkien arvon, ja sen kuinka kuviin investoimisesta
-                kiittää itseään myöhemmin. Lopulta harrastuksesta alkoi
-                muotoutua bisnes, ja yritykseni perustin keväällä 2021. Sen
-                jälkeen olen päässyt kuvailemaan vähän kaikkea laidasta laitaan.
-                Erityisen lähellä sydäntäni on erilaisten tunteiden ja
-                tunnelmien taltioiminen kuviin. Kuvaajana olen lempeä ja
-                helposti lähestyttävä, eikä kuvauksia tarvitse yhtään jännittää.
-                Ei tarvitse tietää, miten kameran edessä ollaan, minä autan ja
-                ohjaan. Yritykseni arvoja ohjaavat luotettavuus, yhdenvertaisuus
-                ja turvallisuus. Mikäli tyylini puhuttelee sinua, ota rohkeasti
-                yhteyttä niin suunnitellaan kuvaus juuri sinun tarpeillesi!
+                itsensä lempeämmin, on se sanoinkuvaamattoman palkitsevaa.
+              </p>
+              <p
+                style={{
+                  textAlign: "justify",
+                  fontSize: 18
+                }}
+              >
+                Mitä enemmän vuosia on vierinyt, olen alkanut paremmin
+                ymmärtämään ohikiitävien hetkien arvon, ja sen kuinka kuviin
+                investoimisesta kiittää itseään myöhemmin. Lopulta
+                harrastuksesta alkoi muotoutua bisnes, ja yritykseni perustin
+                keväällä 2021. Sen jälkeen olen päässyt kuvailemaan vähän
+                kaikkea laidasta laitaan. Erityisen lähellä sydäntäni on
+                erilaisten tunteiden ja tunnelmien taltioiminen kuviin.
+              </p>
+              <p
+                style={{
+                  textAlign: "justify",
+                  fontSize: 18
+                }}
+              >
+                Kuvaajana olen lempeä ja helposti lähestyttävä, eikä kuvauksia
+                tarvitse yhtään jännittää. Ei tarvitse tietää, miten kameran
+                edessä ollaan, minä autan ja ohjaan. Yritykseni arvoja ohjaavat
+                luotettavuus, yhdenvertaisuus ja turvallisuus. Mikäli tyylini
+                puhuttelee sinua, ota rohkeasti yhteyttä niin suunnitellaan
+                kuvaus juuri sinun tarpeillesi!
               </p>
             </div>
           </div>

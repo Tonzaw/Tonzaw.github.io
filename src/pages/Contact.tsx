@@ -3,9 +3,29 @@ import MenuBar from "../components/MenuBar";
 import ContactForm from "../components/ContactForm";
 import "../css/App.css";
 import { useWindowDimensions } from "../common";
+import EmailSent from "../components/EmailSent";
+import { useState } from "react";
 
 function Contact() {
+  const [emailSent, setEmailSent] = useState(false);
+  const [emailError, setEmailError] = useState(false);
   const { width } = useWindowDimensions();
+
+  const onEmailSent = (success: boolean) => {
+    if (success) {
+      setEmailSent(true);
+      setEmailError(false);
+    } else {
+      setEmailError(true);
+    }
+  };
+
+  const onReset = () => {
+    console.log("onReset");
+    setEmailSent(false);
+    setEmailError(false);
+  };
+
   return (
     <div>
       <MenuBar transparent={false} />
@@ -80,7 +100,19 @@ function Contact() {
                   }
             }
           >
-            <ContactForm />
+            {emailSent ? (
+              <div>
+                {emailError ? (
+                  <EmailSent success={false} onReset={onReset} />
+                ) : (
+                  <EmailSent success={true} onReset={onReset} />
+                )}
+              </div>
+            ) : (
+              <div>
+                <ContactForm onEmailSent={onEmailSent} />
+              </div>
+            )}
           </div>
         </div>
       </div>

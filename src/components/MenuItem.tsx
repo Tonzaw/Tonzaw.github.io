@@ -9,20 +9,23 @@ const MenuItem = (props: {
 }) => {
   return (
     <div
-      className="menuItemContainer"
       style={
         props.side === "left"
           ? {
               marginLeft: "auto",
               textAlign: "center",
               marginRight: 8,
-              maxWidth: 150
+              maxWidth: 150,
+              display: "flex",
+              alignItems: "center"
             }
           : {
               textAlign: "center",
               marginLeft: 8,
               marginRight: "auto",
-              maxWidth: 150
+              maxWidth: 150,
+              display: "flex",
+              alignItems: "center"
             }
       }
     >
