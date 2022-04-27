@@ -16,11 +16,20 @@ label, li, a {
 } /* this affects every element in the body and the body itself */
 
 .container {
-  width: 100%;
+  width: auto;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.page {
+  min-height: 101vh;
+}
+
+.link {
+  color: #000;
+  font-weight: bold;
 }
 
 @font-face {
@@ -66,8 +75,6 @@ img {
 }
 @media (max-width: 767px) {
   .container {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 

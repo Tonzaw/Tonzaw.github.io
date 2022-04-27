@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="page">
       <MenuBar transparent={false} />
       <div
         className="container"
@@ -36,6 +36,7 @@ function Contact() {
           marginBottom: 64
         }}
       >
+        <h2 style={{ marginTop: 24 }}>YHTEYSTIEDOT</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -1,0 +1,116 @@
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import MenuBar from "../components/MenuBar";
+import "../css/App.css";
+
+function Prices() {
+  return (
+    <div className="page">
+      <MenuBar transparent={false} />
+      <div
+        className="container"
+        style={{
+          height: "auto",
+          marginBottom: 64
+        }}
+      >
+        <h2 style={{ marginTop: 24 }}>HINNASTO</h2>
+        <p>
+          Alla oleva hinnasto käsittää kaikki portfoliostani löytyvät
+          kuvausvaihtoehdot. Mikäli toivomaasi kuvausta ei löydy tarjonnastani,
+          kysythän siitä erikseen minulta. Tapahtumat ja tilaisuudet
+          hinnoitellaan aina yksilöllisesti asiakkaan tarpeiden mukaan. Kuvausta
+          varatessa laskutan sinulta kuvausmaksun osuuden, joka toimii
+          varausvahvistuksena ja kuvausehtojeni hyväksymisenä. Luethan
+          kuvausehtosopimukseni{" "}
+          <Link className="link" to={"/terms"}>
+            täältä
+          </Link>{" "}
+          ennen kuvauksen varaamista. Kuvausmaksu sisältää kuvauksen
+          suunnittelun, tunnin kuvausajan (newborn-kuvaus 2 tuntia) sekä
+          esivalintagallerian. Kuvapaketti ostetaan erikseen kuvauksen jälkeen.
+        </p>
+        <div
+          style={{
+            width: "auto",
+            maxWidth: 380,
+            height: "auto",
+            margin: "auto",
+            border: "2px solid rgba(0, 0, 0, 0.05)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: 24,
+            background: "#FAF7F6"
+          }}
+        >
+          <div
+            style={{
+              fontSize: 18,
+              padding: 32
+            }}
+          >
+            <p
+              style={{
+                textAlign: "center",
+                fontWeight: "bold"
+              }}
+            >
+              ENNEN KUVAUSTA:
+            </p>
+            <p
+              style={{
+                textAlign: "center"
+              }}
+            >
+              KUVAUSMAKSU 100€
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+                fontWeight: "bold"
+              }}
+            >
+              KUVAUKSEN JÄLKEEN:
+            </p>
+            <p
+              style={{
+                textAlign: "center"
+              }}
+            >
+              10 KUVAA 50€
+            </p>
+            <p
+              style={{
+                textAlign: "center"
+              }}
+            >
+              20 KUVAA 80€
+            </p>
+            <p
+              style={{
+                textAlign: "center"
+              }}
+            >
+              KOKO GALLERIA 120€
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: 14
+              }}
+            >
+              (Kaikki hinnat sisältävät alv. 24%.)
+            </p>
+            <Link to={"/contact"} style={{ textDecoration: "none" }}>
+              <input type="submit" value="VARAA NYT" className="formInput" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default Prices;

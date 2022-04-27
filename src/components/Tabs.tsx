@@ -33,8 +33,8 @@ const Tabs = () => {
         setWidth(elem.offsetWidth - 32);
       }
     }
-    window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
+    window.addEventListener("resize", handleResize);
   }, [left, activeTab]);
 
   const handleClick = (id: string) => {

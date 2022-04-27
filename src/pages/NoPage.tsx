@@ -1,5 +1,5 @@
 function NoPage() {
-  return <div>ERROR</div>;
+  return <div className="page">ERROR</div>;
 }
 
 export default NoPage;

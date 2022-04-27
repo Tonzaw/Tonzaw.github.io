@@ -12,18 +12,14 @@ const MenuItem = (props: {
       style={
         props.side === "left"
           ? {
-              marginLeft: "auto",
+              flex: 1,
               textAlign: "center",
-              marginRight: 8,
-              maxWidth: 150,
               display: "flex",
               alignItems: "center"
             }
           : {
+              flex: 1,
               textAlign: "center",
-              marginLeft: 8,
-              marginRight: "auto",
-              maxWidth: 150,
               display: "flex",
               alignItems: "center"
             }
@@ -39,7 +35,8 @@ const MenuItem = (props: {
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
-            fontWeight: "bold"
+            fontWeight: "bold",
+            width: "100%"
           }}
           to={props.link}
         >
@@ -56,7 +53,8 @@ const MenuItem = (props: {
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
-            fontWeight: "bold"
+            fontWeight: "bold",
+            width: "100%"
           }}
           to={props.link}
         >

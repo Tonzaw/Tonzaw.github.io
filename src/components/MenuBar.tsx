@@ -45,22 +45,21 @@ const MenuBar = (props: { transparent: boolean }) => {
         style={width > 1008 ? { width: 480 } : { width: 360 }}
       >
         <MenuItem name="MINUSTA" link="/about" size={size} side="left" />
-        <MenuItem name="YHTEYSTIEDOT" link="/contact" size={size} side="left" />
-        <MenuItem name="HINNASTO" link="/contact" size={size} side="left" />
+        <MenuItem name="HINNASTO" link="/prices" size={size} side="left" />
+        <MenuItem name="FAQ" link="/faq" size={size} side="left" />
       </div>
       <MainLogo size={size} />
       <div
         className="rightSideMenu"
         style={width > 1008 ? { width: 480 } : { width: 360 }}
       >
+        <MenuItem name="KUVAUSEHDOT" link="/terms" size={size} side="right" />
         <MenuItem
-          name="KYSYMYKSIÄ & VASTAUKSIA"
+          name="YHTEYSTIEDOT"
           link="/contact"
           size={size}
           side="right"
         />
-        <MenuItem name="KUVAUSEHDOT" link="/contact" size={size} side="right" />
-        <MenuItem name="MUUTA" link="/contact" size={size} side="right" />
       </div>
     </div>
   );

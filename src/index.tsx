@@ -7,6 +7,9 @@ import App from "./pages/App";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import About from "./pages/About";
+import Prices from "./pages/Prices";
+import Terms from "./pages/Terms";
+import Faq from "./pages/Faq";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
@@ -17,6 +20,9 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
+        <Route path="prices" element={<Prices />} />
+        <Route path="terms" element={<Terms />} />
+        <Route path="faq" element={<Faq />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>

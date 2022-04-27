@@ -1,4 +1,5 @@
 import { useWindowDimensions } from "../common";
+import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
@@ -6,7 +7,7 @@ import "../css/App.css";
 function About() {
   const { width } = useWindowDimensions();
   return (
-    <div>
+    <div className="page">
       <MenuBar transparent={false} />
       <div
         className="container"
@@ -33,16 +34,19 @@ function About() {
               style={
                 width > 1008
                   ? {
-                      paddingRight: 12
+                      paddingRight: 24,
+                      paddingLeft: 24
                     }
-                  : {}
+                  : {
+                      paddingRight: 24,
+                      paddingLeft: 24
+                    }
               }
             >
               <h2>KUKA OLEN?</h2>
               <p
                 style={{
-                  textAlign: "justify",
-                  fontSize: 18
+                  textAlign: "justify"
                 }}
               >
                 Ihanaa kun löysit sivuilleni! Sara Tuononen Photographyn takaa
@@ -60,8 +64,7 @@ function About() {
               </p>
               <p
                 style={{
-                  textAlign: "justify",
-                  fontSize: 18
+                  textAlign: "justify"
                 }}
               >
                 Mitä enemmän vuosia on vierinyt, olen alkanut paremmin
@@ -74,8 +77,7 @@ function About() {
               </p>
               <p
                 style={{
-                  textAlign: "justify",
-                  fontSize: 18
+                  textAlign: "justify"
                 }}
               >
                 Kuvaajana olen lempeä ja helposti lähestyttävä, eikä kuvauksia
@@ -116,30 +118,15 @@ function About() {
           </div>
         </div>
 
-        <h2 style={{ marginTop: 24, marginBottom: 12 }}>ASIAKASPALAUTTEET</h2>
+        <h2 style={{ marginTop: 24 }}>ASIAKASPALAUTTEET</h2>
         <div
           style={{
             display: "flex",
             flexWrap: "wrap"
           }}
         >
-          <div
-            className="feedbackDiv"
-            style={
-              width > 1008
-                ? {
-                    width: "50%"
-                  }
-                : {
-                    width: "100%"
-                  }
-            }
-          >
-            <p
-              className="feedback"
-              style={{ fontStyle: "italic", textAlign: "center" }}
-            >
-              "Etsimme kuvaajaa, jonka näkemys ja tyyli kohtaisi omamme ja
+          <Feedback
+            feedback="Etsimme kuvaajaa, jonka näkemys ja tyyli kohtaisi omamme ja
               löysimme Saran instagramin kautta. Hänen kanssa oli enemmän kuin
               miellyttävää asioida, vastaukset saimme kysymyksiin nopeasti ja
               ideoita löytyi. Itse h-hetkenä valokuvaus hoitui sulavasti ja
@@ -147,33 +134,82 @@ function About() {
               olivat täynnä raikkautta ja luonnollisuutta - juuri sitä mitä
               kuvilta toivoimme! Lämpimästi voin suositella Saraa kuvaamaan omat
               tärkeät hetkesi. Uusia kuvauksia odottaen."
-            </p>
-            <p style={{ textAlign: "center" }}>-Sanni</p>
-          </div>
-          <div
-            style={
-              width > 1008
-                ? {
-                    width: "50%"
-                  }
-                : {
-                    width: "100%"
-                  }
-            }
-          >
-            <p
-              className="feedback"
-              style={{ fontStyle: "italic", textAlign: "center" }}
-            >
-              "Saran kuvattavana kamera unohtui. Koin kuvaushetken
-              kiireettömänä, vapauttavana, rentona ja miellyttävänä,
-              hauskanakin! Oma epävarmuus ja vaivautuneisuus ajatuksesta olla
-              kuvassa haihtui. Kokemus oli itselleni terapeuttinen, ensi kertaa
-              katson omaa kuvaa hymyillen, itsevarmempana ja itsestäni pitäen ja
-              iloiten! Kiitos Sara!"
-            </p>
-            <p style={{ textAlign: "center" }}>-Tiina</p>
-          </div>
+            name="Sanni"
+          />
+          <Feedback
+            feedback="Saran kuvattavana kamera unohtui. Koin kuvaushetken
+            kiireettömänä, vapauttavana, rentona ja miellyttävänä,
+            hauskanakin! Oma epävarmuus ja vaivautuneisuus ajatuksesta olla
+            kuvassa haihtui. Kokemus oli itselleni terapeuttinen, ensi kertaa
+            katson omaa kuvaa hymyillen, itsevarmempana ja itsestäni pitäen ja
+            iloiten! Kiitos Sara!"
+            name="Tiina"
+          />
+          <Feedback
+            feedback="The pictures are absolutely stunning! I love love love love how
+            you captured so well the essence of our kids. I'm completely in
+            love with your pictures and I can't wait to have a new photoshoot
+            with you. I must say once more that you are super talented Sara!
+            You have the charisma and the eye for photography. I was planning
+            on having like 5 pictures from this session, but I have picked 38!
+            And only after having a through selection process."
+            name="Vanessa"
+          />
+          <Feedback
+            feedback="Sun kanssa kuvien ottaminen tuntu tosi luonnolliselta eikä
+            tarvinnu jännittää yhtään! Olit tosi hyvä myös ideoimaan, millasia
+            kuvia otetaan."
+            name="Rebecca"
+          />
+          <Feedback
+            feedback="Pariskuntakuvauksessa meillä oli tosi iloinen ja rento tunnelma,
+            ei tarvinnut jännittää yhtään. Saatiin kauniit kuvat ja ihanat
+            muistot."
+            name="Anita"
+          />
+
+          <Feedback
+            feedback="Kuvausjännitys laukesi heti kun pääsi Saran kameran taakse, kuvattavana oleminen alkoikin tuntua luontevalta ja mukavalta."
+            name="Susanna"
+          />
+
+          <Feedback
+            feedback="Saran kanssa kuvailu oli tosi luonnollista ja teki itselle rennon fiiliksen, joka tallentui myös kuviin. Tuli olo pyytää Saraa uudelleen kuvaamaan. Laadukkaiden kuvien lisäksi kuvien käsittely sai kuvat näyttämään tosi ammattimaisilta."
+            name="Kehonhuolto Anna Savolainen"
+          />
+          <Feedback
+            feedback="Sara on aivan mahtava valokuvaaja ja hänen seurassaan pystyy rentoutumaan aivan täysin, jopa tällainen kameraa karkaileva ihminen. Osaa huomioida toiveet, mutta oma visuaalinen näkemys ei myöskään puutu. Saat satavarmasti onnistuneita kuvia."
+            name="CAMA sportswear"
+          />
+
+          <Feedback
+            feedback="Saran kanssa newborn-kuvaus sujui rauhallisissa merkeissä, vauvantahtisesti. Saralla oli paljon omia, ihania ideoita kuvien suhteen, mutta hän kuunteli myös meidän näkemyksiämme ja toiveitamme. Kuvista tuli aivan valtavan ihania! Suosittelen Saraa todella lämpimästi!"
+            name="Mimmi"
+          />
+          <Feedback
+            feedback="Olen ollut Saran kuvattavana paljon erilaisissa kuvausympäristöissä ja kerta toisensa jälkeen kuvat ovat olleet upeita. Saran edessä kuvattavana on helppoa ja rentoa olla. Hän osaa hyvin käyttää omaa taiteellista silmäänsä ja luoda kauniita kuvia."
+            name="Emilia"
+          />
+          <Feedback
+            feedback="Saran kanssa kuvaus sujui erittäin luontevasti! Hän oli samalla huomaamaton, mutta osaa myös ammattimaisesti ohjata malliaan. Tunnelma oli rento, eikä aikataululla luoda painetta. Annan ison suosituksen hänelle. Hevoskuvaus sujui todella hyvin ja sain toteutetuksi toivomani."
+            name="Nana"
+          />
+          <Feedback
+            feedback="Ollaan iloisia miten hyviä kuvia saatiin! Puhuttiin että tästä pitää kyllä tehdä sellanen vähintään kerran vuodessa juttu! Niin parasta kun saa oikeesti hyviä kuvia talteen."
+            name="Oona"
+          />
+          <Feedback
+            feedback="Boudoir-kuvaukset tuntuivat etukäteen jännittävältä ja hieman vaivaannuttavaltakin ajatukselta, mutta Saran valokuvattavana oma epävarmuus väistyi hetkessä ja tilalle tuli hyvin itsevarma ja luonteva olo kameran edessä. Kuvaussessio oli hyvin hauska ja voimaannuttava kokemus, jonka aikana tunnelma oli hyvin rento ja vapautunut. Saran ottamista kuvista tuli lopulta todella upeita, jotka kohottivat myös omaa itsetuntoa ja saivat todella arvostamaan omaa rakasta kehoa!"
+            name="Heidi"
+          />
+          <Feedback
+            feedback="Aivan mahtavaa! Kuvista tuli kyllä niin upeita, kiitos sulle. Ihmeessä otan yhteyttä jatkossakin, jos tulee mieleen, mitä kuvata. Suosittelen myös tutuille, jos etsivät kuvaajaa."
+            name="Katri"
+          />
+          <Feedback
+            feedback="Kuvauksessa oli hyvin vapautunut ja positiivinen tunnelma. Ihanaa kun kuvaaja oli itse myös hyvin innostunut ja aikataulukin joustava. Lopputulos aivan priimaa. Kaikki toimi niin kuin sovittiin. Lämmin suositus!"
+            name="Nina"
+          />
         </div>
       </div>
       <Footer />

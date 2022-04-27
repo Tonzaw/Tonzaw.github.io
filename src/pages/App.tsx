@@ -8,7 +8,7 @@ import Tabs from "../components/Tabs";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App page">
       <MenuBar transparent={true} />
       <div>
         <Carousel
@@ -115,7 +115,7 @@ function App() {
         </Link>
       </div>
       <div style={{ minHeight: "100vh" }}>
-        <Element name="portfolio" style={{ paddingTop: 24 }}>
+        <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
           <Tabs />
         </Element>
       </div>

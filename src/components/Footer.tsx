@@ -2,10 +2,7 @@ import "../css/App.css";
 
 const Footer = () => {
   return (
-    <div
-      className="container"
-      style={{ width: "100%", height: 180, textAlign: "center" }}
-    >
+    <div className="container" style={{ height: 180, textAlign: "center" }}>
       <div
         style={{
           background: "#272727",
