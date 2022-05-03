@@ -202,7 +202,6 @@ input[type=submit]:hover {
  
 /* Tab Navigation */
 ul.nav {
-  width: "auto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +232,7 @@ ul.nav li.active {
   background: #272727;
   position: absolute;
   transition: all 0.5s;
+  border-radius: 6px;
 }
 
 @media (max-width: 767px) {
