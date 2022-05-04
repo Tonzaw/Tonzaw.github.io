@@ -30,10 +30,10 @@ const ExpanderItem = (props: { title: string; content: string }) => {
       style={{
         margin: "12px 0",
         padding: 20,
-        border: "1px solid #272727",
-        borderRadius: 16,
+        border: "1px solid #425664",
+        borderRadius: 4,
         boxShadow: "2px 2px #6e6e6e",
-        background: "white"
+        background: "#F6F4F2"
       }}
     >
       <div
@@ -44,7 +44,7 @@ const ExpanderItem = (props: { title: string; content: string }) => {
         }}
         onClick={handleHeaderClick}
       >
-        <div style={{ fontSize: 20, fontWeight: "bold" }}>{props.title}</div>
+        <div style={{ fontSize: 20, color: "#425664" }}>{props.title}</div>
         <div
           style={{
             padding: "3px",
@@ -55,8 +55,8 @@ const ExpanderItem = (props: { title: string; content: string }) => {
         >
           {expanded ? (
             <Minus
-              fill="#f35f63"
-              stroke="#f35f63"
+              fill="#425664"
+              stroke="#425664"
               style={{
                 height: 46,
                 width: 46,
@@ -65,8 +65,8 @@ const ExpanderItem = (props: { title: string; content: string }) => {
             />
           ) : (
             <Plus
-              fill="#00be9d"
-              stroke="#00be9d"
+              fill="#425664"
+              stroke="#425664"
               style={{ height: 46, width: 46, alignSelf: "center" }}
             />
           )}

@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
 import ContactForm from "../components/ContactForm";
 import "../css/App.css";
@@ -28,7 +28,16 @@ function Contact() {
 
   return (
     <div className="page">
-      <MenuBar transparent={false} />
+      <MenuBar transparent={true} />
+      <img
+        src={require("../images/newborn/newborn1.jpg")}
+        alt=""
+        style={{
+          width: "100%",
+          height: "500px",
+          objectFit: "cover"
+        }}
+      />
       <div
         className="container"
         style={{
@@ -117,7 +126,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

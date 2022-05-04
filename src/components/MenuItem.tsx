@@ -29,13 +29,14 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#6e6e6e",
+            color: "#272727",
             fontSize: "0.90rem",
             letterSpacing: "0.20em",
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
             fontWeight: "bold",
+            fontFamily: "Roboto-Bold",
             width: "100%"
           }}
           to={props.link}
@@ -47,13 +48,14 @@ const MenuItem = (props: {
         <Link
           className="menuItem"
           style={{
-            color: "#6e6e6e",
+            color: "#272727",
             fontSize: "0.75rem",
             letterSpacing: "0.15em",
             textAlign: "center",
             verticalAlign: "middle",
             textDecoration: "none",
             fontWeight: "bold",
+            fontFamily: "Roboto-Bold",
             width: "100%"
           }}
           to={props.link}

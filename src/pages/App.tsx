@@ -3,8 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
 import { Element, Link } from "react-scroll";
-import Footer from "../components/Footer";
 import Tabs from "../components/Tabs";
+import Footer2 from "../components/Footer2";
 
 function App() {
   return (
@@ -119,7 +119,7 @@ function App() {
           <Tabs />
         </Element>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

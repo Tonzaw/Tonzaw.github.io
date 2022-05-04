@@ -1,5 +1,5 @@
 import ExpanderItem from "../components/ExpanderItem";
-import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
@@ -8,7 +8,7 @@ function Faq() {
     <div className="page">
       <MenuBar transparent={true} />
       <img
-        src={require("../images/couples/couples3.jpg")}
+        src={require("../images/family/family1.jpg")}
         alt=""
         style={{
           width: "100%",
@@ -103,7 +103,7 @@ function Faq() {
           </li>
         </ul>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

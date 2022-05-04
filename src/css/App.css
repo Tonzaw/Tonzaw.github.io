@@ -52,6 +52,11 @@ label, li, a {
   src: local('Roboto-Regular'), url(../fonts/Roboto-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
 img {
   vertical-align: middle;
 }
@@ -179,7 +184,6 @@ button.control-arrow:before {
     margin: 6px 0 4px;
     border: 1px solid #ccc;
     background: #fafafa;
-    color: #000;
     font-family: sans-serif;
     font-size: 12px;
     line-height: normal;
@@ -193,11 +197,12 @@ input, label {
 
 input[type=submit] {
   color: white;
-  background-color: #272727;
+  font-weight: bold;
+  background-color: #C6AD8F;
 }
 
 input[type=submit]:hover {
-  background-color: #767676;
+  filter: opacity(0.85);
 }
  
 /* Tab Navigation */

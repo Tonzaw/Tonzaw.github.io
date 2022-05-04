@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
 function Prices() {
   return (
     <div className="page">
-      <MenuBar transparent={false} />
+      <MenuBar transparent={true} />
+      <img
+        src={require("../images/couples/couples18.jpg")}
+        alt=""
+        style={{
+          width: "100%",
+          height: "500px",
+          objectFit: "cover"
+        }}
+      />
       <div
         className="container"
         style={{
@@ -36,12 +45,12 @@ function Prices() {
             maxWidth: 380,
             height: "auto",
             margin: "auto",
-            border: "2px solid rgba(0, 0, 0, 0.05)",
+            borderRadius: 4,
+            background: "#F6F4F2",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: 24,
-            background: "#FAF7F6"
+            marginTop: 24
           }}
         >
           <div
@@ -108,7 +117,7 @@ function Prices() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

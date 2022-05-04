@@ -1,6 +1,6 @@
 import { useWindowDimensions } from "../common";
 import Feedback from "../components/Feedback";
-import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
@@ -8,7 +8,16 @@ function About() {
   const { width } = useWindowDimensions();
   return (
     <div className="page">
-      <MenuBar transparent={false} />
+      <MenuBar transparent={true} />
+      <img
+        src={require("../images/couples/couples3.jpg")}
+        alt=""
+        style={{
+          width: "100%",
+          height: "500px",
+          objectFit: "cover"
+        }}
+      />
       <div
         className="container"
         style={{
@@ -118,7 +127,7 @@ function About() {
           </div>
         </div>
 
-        <h2 style={{ marginTop: 24 }}>ASIAKASPALAUTTEET</h2>
+        <h2 style={{ marginTop: 34 }}>ASIAKASPALAUTTEET</h2>
         <div
           style={{
             display: "flex",
@@ -212,7 +221,7 @@ function About() {
           />
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }
