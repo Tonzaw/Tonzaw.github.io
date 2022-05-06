@@ -36,7 +36,7 @@ const Footer = () => {
           marginBottom: 16
         }}
       >
-        +358451235987
+        +358 41 5328222
       </p>
       <a
         href="https://instagram.com/saratuononen_photography"

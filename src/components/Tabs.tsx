@@ -42,7 +42,7 @@ const Tabs = () => {
     let elem = getSelectedElement(id);
 
     if (elem != null) {
-      setLeft(elem.getBoundingClientRect().x + 16);
+      setLeft(elem.getBoundingClientRect().x + 16); // takes margins into account
       setWidth(elem.offsetWidth - 32);
     }
   };

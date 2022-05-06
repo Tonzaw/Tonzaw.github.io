@@ -91,7 +91,7 @@ img {
 }
 
 h2 {
-  color: #272727;
+  color: #425664;
   letter-spacing: 0.1em;
   text-align: center;
   font-size: 32px;
@@ -222,19 +222,19 @@ ul.nav li {
   text-align: center;
   cursor: pointer;
   transition: all 0.7s;
-  color: #6e6e6e;
+  color: #425664;
   font-family: "Antonio-Bold";
   letter-spacing: 0.05rem;
 }
  
 ul.nav li.active {
-  color: #272727;
+  color: #425664;
 }
 
 .stripe {
   width: 132px;
   height: 6px;
-  background: #272727;
+  background: #425664;
   position: absolute;
   transition: all 0.5s;
   border-radius: 6px;
@@ -252,7 +252,7 @@ ul.nav li.active {
 }
 
 .toTopButton {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid #425664;
   border-radius: 40px;
   color: #272727;
   font-weight: bold;
@@ -268,7 +268,25 @@ ul.nav li.active {
 
 .toTopButton:hover {
   top: -4px;
-  background-color: #f5f5f5;
+  background-color: #F6F4F2;
+}
+
+.toTopButtonSimple {
+  border: 2px solid white;
+  border-radius: 40px;
+  color: #272727;
+  font-weight: bold;
+  background-color: #425664;
+  position: relative;
+  top: 0;
+  margin-top: 16px;
+  float: right;
+  height: 50px;
+  width: 50px;
+}
+
+.toTopButtonSimple:hover {
+  background-color: #4d6575;
 }
 
 .feedback {

@@ -75,7 +75,7 @@ function App() {
             <img src={require("../images/couples/couples4.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/couples18.jpg")} alt="" />
+            <img src={require("../images/family/family1.jpg")} alt="" />
           </div>
         </Carousel>
         <Link
