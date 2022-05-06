@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/saratuononen-photography/static/css/main.a3980424.css",
-    "main.js": "/saratuononen-photography/static/js/main.2f64b5d2.js",
+    "main.js": "/saratuononen-photography/static/js/main.dbd6cd93.js",
     "static/js/787.c75175ec.chunk.js": "/saratuononen-photography/static/js/787.c75175ec.chunk.js",
     "static/media/family11.jpg": "/saratuononen-photography/static/media/family11.340781270b5809e8319a.jpg",
     "static/media/family12.jpg": "/saratuononen-photography/static/media/family12.d95ab09b860ab0cdbfc0.jpg",
@@ -80,11 +80,11 @@
     "static/media/minus.svg": "/saratuononen-photography/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/saratuononen-photography/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
     "main.a3980424.css.map": "/saratuononen-photography/static/css/main.a3980424.css.map",
-    "main.2f64b5d2.js.map": "/saratuononen-photography/static/js/main.2f64b5d2.js.map",
+    "main.dbd6cd93.js.map": "/saratuononen-photography/static/js/main.dbd6cd93.js.map",
     "787.c75175ec.chunk.js.map": "/saratuononen-photography/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3980424.css",
-    "static/js/main.2f64b5d2.js"
+    "static/js/main.dbd6cd93.js"
   ]
 }
