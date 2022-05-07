@@ -5,6 +5,7 @@ import "../css/App.css";
 import { useWindowDimensions } from "../common";
 import EmailSent from "../components/EmailSent";
 import { useState } from "react";
+import BurgerMenu from "../components/BurgerMenu";
 
 function Contact() {
   const [emailSent, setEmailSent] = useState(false);
@@ -28,7 +29,7 @@ function Contact() {
 
   return (
     <div className="page">
-      <MenuBar transparent={true} />
+      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
       <img
         src={require("../images/newborn/newborn1.jpg")}
         alt=""

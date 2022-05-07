@@ -1,12 +1,15 @@
+import { useWindowDimensions } from "../common";
+import BurgerMenu from "../components/BurgerMenu";
 import ExpanderItem from "../components/ExpanderItem";
 import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
 function Faq() {
+  const { width } = useWindowDimensions();
   return (
     <div className="page">
-      <MenuBar transparent={true} />
+      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
       <img
         src={require("../images/family/family1.jpg")}
         alt=""

@@ -5,11 +5,15 @@ import MenuBar from "../components/MenuBar";
 import { Element, Link } from "react-scroll";
 import Tabs from "../components/Tabs";
 import Footer2 from "../components/Footer2";
+import { useWindowDimensions } from "../common";
+import BurgerMenu from "../components/BurgerMenu";
 
 function App() {
+  const { width } = useWindowDimensions();
+
   return (
     <div className="App page">
-      <MenuBar transparent={true} />
+      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
       <div>
         <Carousel
           className="Carousel"

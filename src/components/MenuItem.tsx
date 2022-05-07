@@ -27,7 +27,6 @@ const MenuItem = (props: {
     >
       {props.size === "big" && (
         <Link
-          className="menuItem"
           style={{
             color: "#272727",
             fontSize: "0.90rem",
@@ -46,7 +45,6 @@ const MenuItem = (props: {
       )}
       {props.size === "medium" && (
         <Link
-          className="menuItem"
           style={{
             color: "#272727",
             fontSize: "0.75rem",
