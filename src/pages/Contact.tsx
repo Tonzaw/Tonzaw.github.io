@@ -23,7 +23,6 @@ function Contact() {
   };
 
   const onReset = () => {
-    console.log("onReset");
     setEmailSent(false);
     setEmailError(false);
   };
@@ -121,9 +120,12 @@ function Contact() {
                 style={
                   width >= 1008
                     ? {
-                        paddingLeft: 12
+                        paddingLeft: 12,
+                        height: "100%"
                       }
-                    : {}
+                    : {
+                        height: "100%"
+                      }
                 }
               >
                 {emailError ? (

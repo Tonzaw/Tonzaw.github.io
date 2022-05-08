@@ -126,6 +126,14 @@ img {
     height: 20px;
     width: 20px;
   }
+  .emailFailIcon {
+    height: 80px;
+    width: 80px;
+  }
+  .emailSuccessIcon {
+    height: 115px;
+    width: 115px;
+  }
 }
 
 
@@ -178,6 +186,14 @@ img {
   .toTopButtonIcon {
     height: 26px;
     width: 26px;
+  }
+  .emailFailIcon {
+    height: 100px;
+    width: 100px;
+  }
+  .emailSuccessIcon {
+    height: 144px;
+    width: 144px;
   }
 }
 
