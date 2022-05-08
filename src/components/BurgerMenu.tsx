@@ -18,7 +18,9 @@ const styles = {
   },
   bmCrossButton: {
     height: "26px",
-    width: "26px"
+    width: "26px",
+    right: "24px",
+    top: "24px"
   },
   bmCross: {},
   bmMenuWrap: {
@@ -57,7 +59,7 @@ function BurgerMenu() {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div
           style={{
-            paddingTop: 64,
+            paddingTop: 100,
             display: "flex",
             flexDirection: "column",
             flex: 1
@@ -67,7 +69,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",
@@ -75,7 +77,7 @@ function BurgerMenu() {
               fontWeight: "bold",
               fontFamily: "Roboto-Bold",
               width: "100%",
-              paddingBottom: 16
+              marginBottom: 24
             }}
             to={"/"}
           >
@@ -85,7 +87,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",
@@ -93,7 +95,7 @@ function BurgerMenu() {
               fontWeight: "bold",
               fontFamily: "Roboto-Bold",
               width: "100%",
-              paddingBottom: 16
+              marginBottom: 24
             }}
             to={"/about"}
           >
@@ -103,7 +105,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",
@@ -111,7 +113,7 @@ function BurgerMenu() {
               fontWeight: "bold",
               fontFamily: "Roboto-Bold",
               width: "100%",
-              paddingBottom: 16
+              marginBottom: 24
             }}
             to={"/prices"}
           >
@@ -121,7 +123,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",
@@ -129,7 +131,7 @@ function BurgerMenu() {
               fontWeight: "bold",
               fontFamily: "Roboto-Bold",
               width: "100%",
-              paddingBottom: 16
+              marginBottom: 24
             }}
             to={"/faq"}
           >
@@ -139,7 +141,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",
@@ -147,7 +149,7 @@ function BurgerMenu() {
               fontWeight: "bold",
               fontFamily: "Roboto-Bold",
               width: "100%",
-              paddingBottom: 16
+              marginBottom: 24
             }}
             to={"/terms"}
           >
@@ -157,7 +159,7 @@ function BurgerMenu() {
             className="burgerMenuItem"
             style={{
               color: secondaryColor,
-              fontSize: "1rem",
+              fontSize: "1.15rem",
               letterSpacing: "0.15em",
               textAlign: "center",
               verticalAlign: "middle",

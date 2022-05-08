@@ -1,6 +1,5 @@
 import { Slide } from "react-awesome-reveal";
 import PortfolioRow from "./PortfolioRow";
-import ToTopButton from "./ToTopButton";
 
 const PetsPortfolio = () => {
   return (
@@ -11,7 +10,6 @@ const PetsPortfolio = () => {
           <PortfolioRow leftImage={""} rightImage={""} />
         </div>
       </Slide>
-      <ToTopButton />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ReactComponent as Plus } from "../images/icons/plus.svg";
 import { ReactComponent as Minus } from "../images/icons/minus.svg";
+import { primaryColor } from "../styles/colors";
 
 const contentStyle = {
   overflow: "hidden",
@@ -19,23 +20,14 @@ const contentCollapsedStyle = {
   filter: "opacity(0)"
 };
 
-const ExpanderItem = (props: { title: string; content: string }) => {
+const FaqItem = (props: { title: string; content: string }) => {
   const [expanded, setExpanded] = useState(false);
   const handleHeaderClick = () => {
     setExpanded((expanded) => !expanded);
   };
 
   return (
-    <div
-      style={{
-        margin: "12px 0",
-        padding: 20,
-        border: "1px solid #425664",
-        borderRadius: 4,
-        boxShadow: "2px 2px #6e6e6e",
-        background: "#F6F4F2"
-      }}
-    >
+    <div className="faqItem">
       <div
         style={{
           display: "flex",
@@ -44,7 +36,7 @@ const ExpanderItem = (props: { title: string; content: string }) => {
         }}
         onClick={handleHeaderClick}
       >
-        <div style={{ fontSize: 20, color: "#425664" }}>{props.title}</div>
+        <div className="faqTitle">{props.title}</div>
         <div
           style={{
             padding: "3px",
@@ -55,19 +47,15 @@ const ExpanderItem = (props: { title: string; content: string }) => {
         >
           {expanded ? (
             <Minus
-              fill="#425664"
-              stroke="#425664"
-              style={{
-                height: 46,
-                width: 46,
-                alignSelf: "center"
-              }}
+              fill={primaryColor}
+              stroke={primaryColor}
+              className="faqItemIcon"
             />
           ) : (
             <Plus
-              fill="#425664"
-              stroke="#425664"
-              style={{ height: 46, width: 46, alignSelf: "center" }}
+              fill={primaryColor}
+              stroke={primaryColor}
+              className="faqItemIcon"
             />
           )}
         </div>
@@ -75,7 +63,8 @@ const ExpanderItem = (props: { title: string; content: string }) => {
       <div style={expanded ? contentExpandedStyle : contentCollapsedStyle}>
         <p
           style={{
-            paddingRight: 46
+            paddingRight: 46,
+            color: primaryColor
           }}
         >
           {props.content}
@@ -85,4 +74,4 @@ const ExpanderItem = (props: { title: string; content: string }) => {
   );
 };
 
-export default ExpanderItem;
+export default FaqItem;

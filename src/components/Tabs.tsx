@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { useWindowDimensions } from "../common";
 import BoudoirPortfolio from "./BoudoirPortfolio";
 import CouplesPortfolio from "./CouplesPortfolio";
 import FamilyPortfolio from "./FamilyPortfolio";
@@ -6,11 +7,13 @@ import NewbornPortfolio from "./NewbornPortfolio";
 import PetsPortfolio from "./PetsPortfolio";
 import PortraitsPortfolio from "./PortraitsPortfolio";
 import TabContent from "./TabContent";
+import ToTopButton from "./ToTopButton";
 
 const Tabs = () => {
+  const { width } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState("tab1");
   const [left, setLeft] = useState(0);
-  const [width, setWidth] = useState(0);
+  const [stripeWidth, setStripeWidth] = useState(0);
   const tabNavItem1 = useRef<HTMLLIElement>(null);
   const tabNavItem2 = useRef<HTMLLIElement>(null);
   const tabNavItem3 = useRef<HTMLLIElement>(null);
@@ -23,14 +26,14 @@ const Tabs = () => {
       let elem = tabNavItem1.current;
       if (elem != null) {
         setLeft(elem.getBoundingClientRect().x + 16);
-        setWidth(elem.offsetWidth - 32);
+        setStripeWidth(elem.offsetWidth - 32);
       }
     }
     function handleResize() {
       let elem = getSelectedElement(activeTab);
       if (elem != null) {
         setLeft(elem.getBoundingClientRect().x + 16);
-        setWidth(elem.offsetWidth - 32);
+        setStripeWidth(elem.offsetWidth - 32);
       }
     }
     window.addEventListener("load", handleResize);
@@ -43,7 +46,7 @@ const Tabs = () => {
 
     if (elem != null) {
       setLeft(elem.getBoundingClientRect().x + 16); // takes margins into account
-      setWidth(elem.offsetWidth - 32);
+      setStripeWidth(elem.offsetWidth - 32);
     }
   };
 
@@ -113,9 +116,12 @@ const Tabs = () => {
             VASTASYNTYNEET
           </li>
         </ul>
-        <div className="stripe" style={{ left: left, width: width }} />
+        {width > 768 ? (
+          <div className="stripe" style={{ left: left, width: stripeWidth }} />
+        ) : (
+          ""
+        )}
       </div>
-
       <div className="outlet">
         <TabContent id="tab1" activeTab={activeTab}>
           <CouplesPortfolio />
@@ -136,6 +142,7 @@ const Tabs = () => {
           <NewbornPortfolio />
         </TabContent>
       </div>
+      <ToTopButton />
     </div>
   );
 };

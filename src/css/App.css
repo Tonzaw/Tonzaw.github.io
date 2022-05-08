@@ -61,7 +61,7 @@ img {
   vertical-align: middle;
 }
 
-@media (min-width: 1205px) {
+@media (min-width: 1206px) {
   .container {
     max-width: 1140px;
   }
@@ -73,20 +73,111 @@ img {
   }
 }
 
-@media (min-width: 767px) and (max-width: 1008px) {
+@media (min-width: 769px) and (max-width: 1007px) {
   .container {
     max-width: 720px;
   }
 }
-@media (max-width: 767px) {
-  .container {
+
+@media (max-width: 768px) {
+  .carousel .slide img {
+    height: "auto";
+    max-height: 100vh;
+    object-fit: cover;
+    width: "100%";
+  }
+  ul.nav {
+    display: block !important;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .faqItem {
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #425664;
+    border-radius: 4px;
+    box-shadow: 2px 2px #6e6e6e;
+    background: #F6F4F2;
+  }
+  .faqTitle {
+    font-size: 16px;
+    color: #272727;
+  }
+  .faqItemIcon {
+    height: 32px;
+    width: 32px;
+  }
+  .toTopButton {
+    border: 2px solid #425664;
+    border-radius: 40px;
+    color: #272727;
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+    margin-top: 26px;
+    margin-bottom: 32px;
+    height: 48px;
+    width: 48px;
+  }
+  .toTopButtonIcon {
+    height: 20px;
+    width: 20px;
   }
 }
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel .slide img {
+    height: "auto";
+    max-height: 100vh;
+    object-fit: cover;
+    width: "100%";
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .faqItem {
+    margin: 12px 0;
+    padding: 20px;
+    border: 1px solid #425664;
+    border-radius: 4px;
+    box-shadow: 2px 2px #6e6e6e;
+    background: #F6F4F2;
+  }
+  .faqTitle {
+    font-size: 20px;
+    color: #272727;
+  }
+  .faqItemIcon {
+    height: 46px;
+    width: 46px;
+  }
+  .toTopButton {
+    border: 2px solid #425664;
+    border-radius: 40px;
+    color: #272727;
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+    margin-top: 32px;
+    margin-bottom: 42px;
+    height: 60px;
+    width: 60px;
+  }
+  .toTopButtonIcon {
+    height: 26px;
+    width: 26px;
   }
 }
 
@@ -94,7 +185,6 @@ h2 {
   color: #425664;
   letter-spacing: 0.1em;
   text-align: center;
-  font-size: 32px;
 }
 
 h3 {
@@ -141,7 +231,6 @@ h3 {
 }
 
 .carousel .slide img {
-  height: 100vh;
   object-fit: cover;
   width: auto;
 }
@@ -239,30 +328,9 @@ ul.nav li.active {
   border-radius: 6px;
 }
 
-@media (max-width: 767px) {
-  .stripe {
-    height: 4px;
-  }
-}
-
 .aboutLi {
   float: left;
   width: 50%;
-}
-
-.toTopButton {
-  border: 2px solid #425664;
-  border-radius: 40px;
-  color: #272727;
-  font-weight: bold;
-  background-color: white;
-  position: relative;
-  top: 0;
-  transition: top ease 0.3s;
-  margin-top: 32px;
-  margin-bottom: 42px;
-  height: 60px;
-  width: 60px;
 }
 
 .toTopButton:hover {

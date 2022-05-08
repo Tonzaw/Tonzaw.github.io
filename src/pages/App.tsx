@@ -13,8 +13,8 @@ function App() {
 
   return (
     <div className="App page">
-      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <div>
+      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
+      <div style={{ position: "relative" }}>
         <Carousel
           className="Carousel"
           autoPlay
@@ -82,41 +82,45 @@ function App() {
             <img src={require("../images/family/family1.jpg")} alt="" />
           </div>
         </Carousel>
-        <Link
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          duration={500}
-          style={{
-            position: "absolute",
-            width: "100%",
-            zIndex: 998,
-            bottom: 0,
-            left: 0,
-            cursor: "pointer"
-          }}
-        >
-          <button
-            className="control-arrow control-next arrow-down"
+        {width >= 1206 ? (
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            duration={500}
             style={{
-              alignItems: "center",
-              padding: 16,
-              background: "transparent",
-              border: 0,
+              position: "absolute",
+              width: "100%",
+              zIndex: 998,
+              bottom: 0,
+              left: 0,
               cursor: "pointer"
             }}
           >
-            <img
-              className="arrow-img"
+            <button
+              className="control-arrow control-next arrow-down"
               style={{
-                height: "40px",
-                width: "40px"
+                alignItems: "center",
+                padding: 16,
+                background: "transparent",
+                border: 0,
+                cursor: "pointer"
               }}
-              src={require("../images/icons/down.png")}
-              alt=""
-            />
-          </button>
-        </Link>
+            >
+              <img
+                className="arrow-img"
+                style={{
+                  height: "40px",
+                  width: "40px"
+                }}
+                src={require("../images/icons/down.png")}
+                alt=""
+              />
+            </button>
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
       <div style={{ minHeight: "100vh" }}>
         <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>

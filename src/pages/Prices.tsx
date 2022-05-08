@@ -7,15 +7,16 @@ import "../css/App.css";
 
 function Prices() {
   const { width } = useWindowDimensions();
+  const bannerImageHeight = width > 768 ? "48vh" : "30vh";
   return (
     <div className="page">
-      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
+      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
       <img
         src={require("../images/couples/couples18.jpg")}
         alt=""
         style={{
           width: "100%",
-          height: "500px",
+          height: bannerImageHeight,
           objectFit: "cover"
         }}
       />

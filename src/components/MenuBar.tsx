@@ -8,7 +8,7 @@ const MenuBar = (props: { transparent: boolean }) => {
   let size = "big";
   if (width >= 1008) {
     size = "big";
-  } else if (width < 1008 && width > 767) {
+  } else if (width < 1008 && width > 768) {
     size = "medium";
   } else {
     size = "small";

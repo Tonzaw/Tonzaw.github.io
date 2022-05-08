@@ -6,7 +6,7 @@ function NoPage() {
   const { width } = useWindowDimensions();
   return (
     <div className="page">
-      {width > 767 ? <MenuBar transparent={true} /> : <BurgerMenu />}
+      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import { Slide } from "react-awesome-reveal";
 import PortfolioRow from "./PortfolioRow";
-import ToTopButton from "./ToTopButton";
 
 const FamilyPortfolio = () => {
   return (
@@ -41,7 +40,6 @@ const FamilyPortfolio = () => {
           />
         </div>
       </Slide>
-      <ToTopButton />
     </div>
   );
 };

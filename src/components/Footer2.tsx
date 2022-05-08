@@ -1,8 +1,10 @@
+import { useWindowDimensions } from "../common";
 import "../css/App.css";
 import { ReactComponent as Instagram } from "../images/icons/ig.svg";
 import ToTopButtonSimple from "./ToTopButtonSimple";
 
 const Footer2 = () => {
+  const { width } = useWindowDimensions();
   return (
     <footer
       style={{ height: "auto", textAlign: "left", background: "#425664" }}
@@ -81,7 +83,7 @@ const Footer2 = () => {
           </p>
         </div>
         <div style={{ flex: "1" }}>
-          <ToTopButtonSimple />
+          {width > 768 ? <ToTopButtonSimple /> : ""}
         </div>
       </div>
     </footer>
