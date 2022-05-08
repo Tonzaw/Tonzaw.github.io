@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/saratuononen-photography/static/css/main.ebe7700a.css",
-    "main.js": "/saratuononen-photography/static/js/main.013a5678.js",
+    "main.css": "/saratuononen-photography/static/css/main.d52ceb26.css",
+    "main.js": "/saratuononen-photography/static/js/main.a912c435.js",
     "static/js/787.c75175ec.chunk.js": "/saratuononen-photography/static/js/787.c75175ec.chunk.js",
     "static/media/family11.jpg": "/saratuononen-photography/static/media/family11.340781270b5809e8319a.jpg",
     "static/media/family12.jpg": "/saratuononen-photography/static/media/family12.d95ab09b860ab0cdbfc0.jpg",
@@ -72,19 +72,19 @@
     "static/media/Roboto-Regular.ttf": "/saratuononen-photography/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/saratuononen-photography/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
     "static/media/Antonio-Bold.ttf": "/saratuononen-photography/static/media/Antonio-Bold.7c89038493d2f1ce9ce6.ttf",
-    "static/media/fail.png": "/saratuononen-photography/static/media/fail.6a833529d4ef4997100a.png",
-    "static/media/success.png": "/saratuononen-photography/static/media/success.929a665e2b36001976c4.png",
     "static/media/ig.svg": "/saratuononen-photography/static/media/ig.1f65b50804e539381873f65d35ebbd1e.svg",
     "index.html": "/saratuononen-photography/index.html",
+    "static/media/fail.svg": "/saratuononen-photography/static/media/fail.79e43fb2dcf175c5da28d858283de372.svg",
     "static/media/plus.svg": "/saratuononen-photography/static/media/plus.6a72864cea331ea4595a2c2eb597549c.svg",
+    "static/media/checkmark.svg": "/saratuononen-photography/static/media/checkmark.157a9f5fd6c46bb963cbf123fdf8470d.svg",
     "static/media/minus.svg": "/saratuononen-photography/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/saratuononen-photography/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
-    "main.ebe7700a.css.map": "/saratuononen-photography/static/css/main.ebe7700a.css.map",
-    "main.013a5678.js.map": "/saratuononen-photography/static/js/main.013a5678.js.map",
+    "main.d52ceb26.css.map": "/saratuononen-photography/static/css/main.d52ceb26.css.map",
+    "main.a912c435.js.map": "/saratuononen-photography/static/js/main.a912c435.js.map",
     "787.c75175ec.chunk.js.map": "/saratuononen-photography/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebe7700a.css",
-    "static/js/main.013a5678.js"
+    "static/css/main.d52ceb26.css",
+    "static/js/main.a912c435.js"
   ]
 }
