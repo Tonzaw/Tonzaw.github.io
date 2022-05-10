@@ -122,7 +122,7 @@ function About() {
                 style={{
                   width: "100%"
                 }}
-                src={require("../images/couples/couples2.jpg")}
+                src={require("../images/sara.jpg")}
                 alt=""
               />
             </div>

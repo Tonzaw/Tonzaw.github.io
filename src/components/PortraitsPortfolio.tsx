@@ -7,12 +7,16 @@ const PortraitsPortfolio = () => {
       <Slide duration={500} direction="left" fraction={0.001} cascade={true}>
         <div>
           <PortfolioRow
-            leftImage={require("../images/portraits/portraits3.jpg")}
-            rightImage={require("../images/portraits/portraits2.jpg")}
+            leftImage={require("../images/portraits/portrait3.jpg")}
+            rightImage={require("../images/portraits/portrait2.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/portraits/portraits1.jpg")}
-            rightImage={require("../images/portraits/portraits4.jpg")}
+            leftImage={require("../images/portraits/portrait5.jpg")}
+            rightImage={require("../images/portraits/portrait6.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/portraits/portrait1.jpg")}
+            rightImage={require("../images/portraits/portrait4.jpg")}
           />
         </div>
       </Slide>

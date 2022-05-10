@@ -76,10 +76,19 @@ function App() {
             <img src={require("../images/newborn/newborn3.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/couples4.jpg")} alt="" />
+            <img src={require("../images/couples/couples20.jpg")} alt="" />
           </div>
           <div>
             <img src={require("../images/family/family1.jpg")} alt="" />
+          </div>
+          <div>
+            <img src={require("../images/portraits/portrait6.jpg")} alt="" />
+          </div>
+          <div>
+            <img src={require("../images/family/family19.jpg")} alt="" />
+          </div>
+          <div>
+            <img src={require("../images/family/family16.jpg")} alt="" />
           </div>
         </Carousel>
         {width >= 1206 ? (

@@ -30,7 +30,7 @@ const Footer2 = () => {
             YHTEYSTIEDOT
           </p>
           <a
-            href="mailto:info@saratuononen.com"
+            href="mailto:saratuononen.photography@gmail.com"
             style={{
               flex: 1,
               fontSize: "0.75rem",
@@ -39,7 +39,9 @@ const Footer2 = () => {
               color: "white"
             }}
           >
-            INFO@SARATUONONEN.COM
+            SARATUONONEN.PHOTOGRAPHY
+            {width > 768 ? "" : <wbr />}
+            @GMAIL.COM
           </a>
           <p
             style={{

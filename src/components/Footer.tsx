@@ -13,7 +13,7 @@ const Footer = () => {
         YHTEYSTIEDOT
       </h3>
       <a
-        href="mailto:info@saratuononen.com"
+        href="mailto:saratuononen.photography@gmail.com"
         style={{
           flex: 1,
           color: "#272727",
@@ -24,7 +24,7 @@ const Footer = () => {
           marginBottom: 16
         }}
       >
-        INFO@SARATUONONEN.COM
+        SARATUONONEN.PHOTOGRAPHY@GMAIL.COM
       </a>
       <p
         style={{
