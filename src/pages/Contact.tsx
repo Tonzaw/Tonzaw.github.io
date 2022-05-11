@@ -6,12 +6,12 @@ import { useWindowDimensions } from "../common";
 import EmailSent from "../components/EmailSent";
 import { useState } from "react";
 import BurgerMenu from "../components/BurgerMenu";
+import BannerImage from "../components/BannerImage";
 
 function Contact() {
   const [emailSent, setEmailSent] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const { width } = useWindowDimensions();
-  const bannerImageHeight = width > 768 ? "48vh" : "30vh";
 
   const onEmailSent = (success: boolean) => {
     if (success) {
@@ -30,15 +30,7 @@ function Contact() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <img
-        src={require("../images/newborn/newborn1.jpg")}
-        alt=""
-        style={{
-          width: "100%",
-          height: bannerImageHeight,
-          objectFit: "cover"
-        }}
-      />
+      <BannerImage image={require("../images/newborn/newborn1.jpg")} />
       <div
         className="container"
         style={{

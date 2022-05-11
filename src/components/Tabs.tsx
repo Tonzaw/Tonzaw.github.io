@@ -11,7 +11,6 @@ import ToTopButton from "./ToTopButton";
 
 const Tabs = () => {
   const { width } = useWindowDimensions();
-  const stripe = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState("tab1");
   const [left, setLeft] = useState(0);
   const [stripeWidth, setStripeWidth] = useState(0);
@@ -32,12 +31,12 @@ const Tabs = () => {
     }
     function handleResize() {
       let elem = getSelectedElement(activeTab);
-      if (elem != null && stripe.current != null) {
-        stripe.current.style.display = "block";
+      if (elem != null) {
         setLeft(elem.getBoundingClientRect().x + 16);
         setStripeWidth(elem.offsetWidth - 32);
       }
     }
+    window.addEventListener("scroll", handleResize);
     window.addEventListener("load", handleResize);
     window.addEventListener("resize", handleResize);
   }, [left, activeTab]);
@@ -119,11 +118,7 @@ const Tabs = () => {
           </li>
         </ul>
         {width > 768 ? (
-          <div
-            ref={stripe}
-            className="stripe"
-            style={{ left: left, width: stripeWidth, display: "none" }}
-          />
+          <div className="stripe" style={{ left: left, width: stripeWidth }} />
         ) : (
           ""
         )}

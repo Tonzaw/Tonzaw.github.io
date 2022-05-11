@@ -10,12 +10,14 @@ import About from "./pages/About";
 import Prices from "./pages/Prices";
 import Terms from "./pages/Terms";
 import Faq from "./pages/Faq";
+import ScrollToTop from "./utils";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="contact" element={<Contact />} />

@@ -1,4 +1,5 @@
 import { useWindowDimensions } from "../common";
+import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
 import FaqItem from "../components/FaqItem";
 import Footer2 from "../components/Footer2";
@@ -7,19 +8,10 @@ import "../css/App.css";
 
 function Faq() {
   const { width } = useWindowDimensions();
-  const bannerImageHeight = width > 768 ? "48vh" : "30vh";
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <img
-        src={require("../images/family/family1.jpg")}
-        alt=""
-        style={{
-          width: "100%",
-          height: bannerImageHeight,
-          objectFit: "cover"
-        }}
-      />
+      <BannerImage image={require("../images/family/family1.jpg")} />
       <div
         className="container"
         style={{

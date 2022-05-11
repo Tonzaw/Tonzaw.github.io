@@ -1,4 +1,5 @@
 import { useWindowDimensions } from "../common";
+import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
 import Feedback from "../components/Feedback";
 import Footer2 from "../components/Footer2";
@@ -7,19 +8,10 @@ import "../css/App.css";
 
 function About() {
   const { width } = useWindowDimensions();
-  const bannerImageHeight = width > 768 ? "48vh" : "30vh";
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <img
-        src={require("../images/couples/couples3.jpg")}
-        alt=""
-        style={{
-          width: "100%",
-          height: bannerImageHeight,
-          objectFit: "cover"
-        }}
-      />
+      <BannerImage image={require("../images/pets/pets1.jpg")} />
       <div
         className="container"
         style={{
@@ -129,7 +121,7 @@ function About() {
           </div>
         </div>
 
-        <h2 style={{ marginTop: 34 }}>ASIAKASPALAUTTEET</h2>
+        <h2 style={{ marginTop: 34 }}>PALAUTTEET</h2>
         <div
           style={{
             display: "flex",

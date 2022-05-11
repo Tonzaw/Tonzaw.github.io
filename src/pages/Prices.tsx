@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useWindowDimensions } from "../common";
+import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
 import Footer2 from "../components/Footer2";
 import MenuBar from "../components/MenuBar";
@@ -7,19 +8,10 @@ import "../css/App.css";
 
 function Prices() {
   const { width } = useWindowDimensions();
-  const bannerImageHeight = width > 768 ? "48vh" : "30vh";
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <img
-        src={require("../images/couples/couples18.jpg")}
-        alt=""
-        style={{
-          width: "100%",
-          height: bannerImageHeight,
-          objectFit: "cover"
-        }}
-      />
+      <BannerImage image={require("../images/couples/couples18.jpg")} />
       <div
         className="container"
         style={{
@@ -33,7 +25,7 @@ function Prices() {
           kuvausvaihtoehdot. Mikäli toivomaasi kuvausta ei löydy tarjonnastani,
           kysythän siitä erikseen minulta. Tapahtumat ja tilaisuudet
           hinnoitellaan aina yksilöllisesti asiakkaan tarpeiden mukaan. Kuvausta
-          varatessa laskutan sinulta kuvausmaksun osuuden, joka toimii
+          varatessa laskutan sinulta kuvausmaksu osuuden, joka toimii
           varausvahvistuksena ja kuvausehtojeni hyväksymisenä. Luethan
           kuvausehtosopimukseni{" "}
           <Link className="link" to={"/terms"}>

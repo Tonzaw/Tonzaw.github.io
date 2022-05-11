@@ -7,6 +7,7 @@ import Tabs from "../components/Tabs";
 import Footer2 from "../components/Footer2";
 import { useWindowDimensions } from "../common";
 import BurgerMenu from "../components/BurgerMenu";
+import MainLogoSmall from "../components/MainLogoSmall";
 
 function App() {
   const { width } = useWindowDimensions();
@@ -14,13 +15,14 @@ function App() {
   return (
     <div className="App page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
+      {width > 768 ? "" : <MainLogoSmall />}
       <div style={{ position: "relative" }}>
         <Carousel
           className="Carousel"
           autoPlay
           infiniteLoop
           stopOnHover={false}
-          interval={8000}
+          interval={6000}
           showThumbs={false}
           swipeable={false}
           animationHandler={"fade"}
@@ -41,7 +43,11 @@ function App() {
               >
                 <img
                   className="arrow-img"
-                  style={{ height: "40px", width: "40px", color: "white" }}
+                  style={
+                    width < 376
+                      ? { height: "30px", width: "30px" }
+                      : { height: "40px", width: "40px" }
+                  }
                   src={require("../images/icons/prev.png")}
                   alt=""
                 />
@@ -61,10 +67,11 @@ function App() {
               >
                 <img
                   className="arrow-img"
-                  style={{
-                    height: "40px",
-                    width: "40px"
-                  }}
+                  style={
+                    width < 376
+                      ? { height: "30px", width: "30px" }
+                      : { height: "40px", width: "40px" }
+                  }
                   src={require("../images/icons/next.png")}
                   alt=""
                 />
@@ -89,6 +96,9 @@ function App() {
           </div>
           <div>
             <img src={require("../images/family/family16.jpg")} alt="" />
+          </div>
+          <div>
+            <img src={require("../images/couples/couples23.jpg")} alt="" />
           </div>
         </Carousel>
         {width >= 1206 ? (
