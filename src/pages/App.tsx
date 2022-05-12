@@ -33,6 +33,7 @@ function App() {
           renderArrowPrev={(clickHandler, hasPrev) =>
             hasPrev && (
               <button
+                aria-label="previous image"
                 className="control-arrow control-prev"
                 onClick={clickHandler}
                 style={{
@@ -57,6 +58,7 @@ function App() {
           renderArrowNext={(clickHandler, hasNext) =>
             hasNext && (
               <button
+                aria-label="next image"
                 className="control-arrow control-next"
                 onClick={clickHandler}
                 style={{
@@ -92,7 +94,7 @@ function App() {
             <img src={require("../images/portraits/portrait6.jpg")} alt="" />
           </div>
           <div>
-            <img src={require("../images/family/family19.jpg")} alt="" />
+            <img src={require("../images/family/family18.jpg")} alt="" />
           </div>
           <div>
             <img src={require("../images/family/family16.jpg")} alt="" />

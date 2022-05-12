@@ -4,8 +4,14 @@ import { primaryColor } from "../styles/colors";
 
 const ToTopButton = () => {
   return (
-    <Link to="portfolio" spy={true} smooth={true} duration={500}>
-      <button className="toTopButton">
+    <Link
+      to="portfolio"
+      href="#portfolio"
+      spy={true}
+      smooth={true}
+      duration={500}
+    >
+      <button aria-label="back to top" className="toTopButton">
         <Up
           fill={primaryColor}
           stroke={primaryColor}
