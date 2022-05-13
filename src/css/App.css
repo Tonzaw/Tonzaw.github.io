@@ -253,9 +253,6 @@ button.control-arrow:before {
   display: none !important;
 }
 
-.arrow-img {
-}
-
 .leftSideMenu {
   float: right;
   display: flex;

@@ -43,7 +43,6 @@ function App() {
                 }}
               >
                 <img
-                  className="arrow-img"
                   style={
                     width < 376
                       ? { height: "30px", width: "30px" }
@@ -68,7 +67,6 @@ function App() {
                 }}
               >
                 <img
-                  className="arrow-img"
                   style={
                     width < 376
                       ? { height: "30px", width: "30px" }
@@ -129,7 +127,6 @@ function App() {
               }}
             >
               <img
-                className="arrow-img"
                 style={{
                   height: "40px",
                   width: "40px"

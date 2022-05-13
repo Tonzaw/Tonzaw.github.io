@@ -121,7 +121,7 @@ function About() {
           </div>
         </div>
 
-        <h2 style={{ marginTop: 34 }}>PALAUTTEET</h2>
+        <h2 style={{ marginTop: 34 }}>ASIAKKAIDEN KOKEMUKSIA</h2>
         <div
           style={{
             display: "flex",

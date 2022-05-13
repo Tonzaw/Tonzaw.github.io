@@ -4,7 +4,12 @@ import PortfolioRow from "./PortfolioRow";
 const CouplesPortfolio = () => {
   return (
     <div className="container" style={{ paddingTop: 42 }}>
-      <Slide duration={500} direction="left" fraction={0.001} cascade={true}>
+      <Slide
+        duration={500}
+        direction="left"
+        fraction={0.00000001}
+        cascade={true}
+      >
         <div>
           <PortfolioRow
             leftImage={require("../images/couples/couples3.jpg")}

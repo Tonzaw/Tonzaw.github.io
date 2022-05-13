@@ -18,7 +18,7 @@ const MainLogoSmall = () => {
         style={
           width > 470
             ? { height: "auto", width: 150 }
-            : { height: "auto", width: 100 }
+            : { height: "auto", width: 90 }
         }
       />
     </div>
