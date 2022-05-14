@@ -125,7 +125,7 @@ function App() {
           >
             <button
               className="control-arrow control-next arrow-down"
-              aria-aria-label="portfolio"
+              aria-label={"portfolio"}
               style={{
                 alignItems: "center",
                 padding: 16,
