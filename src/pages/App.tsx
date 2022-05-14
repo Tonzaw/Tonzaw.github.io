@@ -107,6 +107,7 @@ function App() {
             spy={true}
             smooth={true}
             duration={500}
+            href="#"
             style={{
               position: "absolute",
               width: "100%",
@@ -118,6 +119,7 @@ function App() {
           >
             <button
               className="control-arrow control-next arrow-down"
+              aria-aria-label="to portfolio"
               style={{
                 alignItems: "center",
                 padding: 16,
