@@ -11,8 +11,13 @@ import MainLogoSmall from "../components/MainLogoSmall";
 import { usePreloadImages } from "../utils";
 import img1 from "../images/newborn/newborn3.jpg";
 import img2 from "../images/couples/couples20.jpg";
+import img3 from "../images/family/family1.jpg";
+import img4 from "../images/portraits/portrait6.jpg";
+import img5 from "../images/family/family18.jpg";
+import img6 from "../images/family/family16.jpg";
+import img7 from "../images/couples/couples23.jpg";
 
-const preload = [img1, img2];
+const preload = [img1, img2, img3, img4, img5, img6, img7];
 
 function App() {
   const { width } = useWindowDimensions();
@@ -92,19 +97,19 @@ function App() {
             <img src={img2} alt="" />
           </div>
           <div>
-            <img src={require("../images/family/family1.jpg")} alt="" />
+            <img src={img3} alt="" />
           </div>
           <div>
-            <img src={require("../images/portraits/portrait6.jpg")} alt="" />
+            <img src={img4} alt="" />
           </div>
           <div>
-            <img src={require("../images/family/family18.jpg")} alt="" />
+            <img src={img5} alt="" />
           </div>
           <div>
-            <img src={require("../images/family/family16.jpg")} alt="" />
+            <img src={img6} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/couples23.jpg")} alt="" />
+            <img src={img7} alt="" />
           </div>
         </Carousel>
         {width >= 1206 ? (
