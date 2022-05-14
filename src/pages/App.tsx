@@ -8,9 +8,15 @@ import Footer2 from "../components/Footer2";
 import { useWindowDimensions } from "../common";
 import BurgerMenu from "../components/BurgerMenu";
 import MainLogoSmall from "../components/MainLogoSmall";
+import { usePreloadImages } from "../utils";
+import img1 from "../images/newborn/newborn3.jpg";
+import img2 from "../images/couples/couples20.jpg";
+
+const preload = [img1, img2];
 
 function App() {
   const { width } = useWindowDimensions();
+  usePreloadImages(preload);
 
   return (
     <div className="App page">
@@ -80,10 +86,10 @@ function App() {
           }
         >
           <div>
-            <img src={require("../images/newborn/newborn3.jpg")} alt="" />
+            <img src={img1} alt="" />
           </div>
           <div>
-            <img src={require("../images/couples/couples20.jpg")} alt="" />
+            <img src={img2} alt="" />
           </div>
           <div>
             <img src={require("../images/family/family1.jpg")} alt="" />
@@ -119,6 +125,7 @@ function App() {
           >
             <button
               className="control-arrow control-next arrow-down"
+              aria-aria-label="portfolio"
               style={{
                 alignItems: "center",
                 padding: 16,
