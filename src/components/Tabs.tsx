@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useWindowDimensions } from "../common";
 import BoudoirPortfolio from "./BoudoirPortfolio";
+import CompanyPortfolio from "./CompanyPortfolio";
 import CouplesPortfolio from "./CouplesPortfolio";
 import FamilyPortfolio from "./FamilyPortfolio";
 import NewbornPortfolio from "./NewbornPortfolio";
@@ -20,6 +21,7 @@ const Tabs = () => {
   const tabNavItem4 = useRef<HTMLLIElement>(null);
   const tabNavItem5 = useRef<HTMLLIElement>(null);
   const tabNavItem6 = useRef<HTMLLIElement>(null);
+  const tabNavItem7 = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     if (left === 0) {
@@ -65,6 +67,8 @@ const Tabs = () => {
         return tabNavItem5.current;
       case "tab6":
         return tabNavItem6.current;
+      case "tab7":
+        return tabNavItem7.current;
       default:
         return tabNavItem1.current;
     }
@@ -116,6 +120,13 @@ const Tabs = () => {
           >
             VASTASYNTYNEET
           </li>
+          <li
+            ref={tabNavItem7}
+            onClick={() => handleClick("tab7")}
+            className={activeTab === "tab7" ? "active" : ""}
+          >
+            YRITYKSET
+          </li>
         </ul>
         {width > 768 ? (
           <div className="stripe" style={{ left: left, width: stripeWidth }} />
@@ -141,6 +152,9 @@ const Tabs = () => {
         </TabContent>
         <TabContent id="tab6" activeTab={activeTab}>
           <NewbornPortfolio />
+        </TabContent>
+        <TabContent id="tab7" activeTab={activeTab}>
+          <CompanyPortfolio />
         </TabContent>
       </div>
       <ToTopButton />
