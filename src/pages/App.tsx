@@ -11,13 +11,14 @@ import MainLogoSmall from "../components/MainLogoSmall";
 import { usePreloadImages } from "../utils";
 import img1 from "../images/newborn/newborn3.jpg";
 import img2 from "../images/couples/couples20.jpg";
-import img3 from "../images/family/family1.jpg";
-import img4 from "../images/portraits/portrait6.jpg";
-import img5 from "../images/family/family18.jpg";
-import img6 from "../images/family/family16.jpg";
+import img3 from "../images/family/family25.jpg";
+import img4 from "../images/portraits/portrait56.jpg";
+import img5 from "../images/family/family28.jpg";
+import img6 from "../images/family/family26.jpg";
 import img7 from "../images/couples/couples23.jpg";
+import img8 from "../images/pets/pets17.jpg";
 
-const preload = [img1, img2, img3, img4, img5, img6, img7];
+const preload = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 function App() {
   const { width } = useWindowDimensions();
@@ -110,6 +111,9 @@ function App() {
           </div>
           <div>
             <img src={img7} alt="" />
+          </div>
+          <div>
+            <img src={img8} alt="" />
           </div>
         </Carousel>
         {width >= 1206 ? (

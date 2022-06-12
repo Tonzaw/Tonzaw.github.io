@@ -11,7 +11,7 @@ function About() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/pets/pets1.jpg")} />
+      <BannerImage image={require("../images/pets/pets17.jpg")} />
       <div
         className="container"
         style={{

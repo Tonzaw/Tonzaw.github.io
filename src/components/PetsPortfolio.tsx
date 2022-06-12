@@ -8,9 +8,40 @@ const PetsPortfolio = () => {
         <div>
           <PortfolioRow
             leftImage={require("../images/pets/pets1.jpg")}
-            rightImage={""}
+            rightImage={require("../images/pets/pets6.jpg")}
           />
-          <PortfolioRow leftImage={""} rightImage={""} />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets15.jpg")}
+            rightImage={require("../images/pets/pets2.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets7.jpg")}
+            rightImage={require("../images/pets/pets8.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets11.jpg")}
+            rightImage={require("../images/pets/pets12.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets13.jpg")}
+            rightImage={require("../images/pets/pets14.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets9.jpg")}
+            rightImage={require("../images/pets/pets16.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets17.jpg")}
+            rightImage={require("../images/pets/pets10.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets18.jpg")}
+            rightImage={require("../images/pets/pets4.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/pets/pets5.jpg")}
+            rightImage={require("../images/pets/pets3.jpg")}
+          />
         </div>
       </Slide>
     </div>

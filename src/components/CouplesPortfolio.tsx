@@ -45,7 +45,7 @@ const CouplesPortfolio = () => {
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples5.jpg")}
-            rightImage={require("../images/couples/couples8.jpg")}
+            rightImage={""}
           />
         </div>
       </Slide>
