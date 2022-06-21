@@ -11,7 +11,7 @@ function Faq() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/family/family1.jpg")} />
+      <BannerImage image={require("../images/newborn/newborn16.jpg")} />
       <div
         className="container"
         style={{

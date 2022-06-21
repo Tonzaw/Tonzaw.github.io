@@ -39,7 +39,7 @@ const PetsPortfolio = () => {
             rightImage={require("../images/pets/pets4.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/pets/pets5.jpg")}
+            leftImage={""}
             rightImage={require("../images/pets/pets3.jpg")}
           />
         </div>

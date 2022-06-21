@@ -11,7 +11,7 @@ function About() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/pets/pets17.jpg")} />
+      <BannerImage image={require("../images/banner-about.jpg")} />
       <div
         className="container"
         style={{
@@ -109,10 +109,12 @@ function About() {
                   }
             }
           >
-            <div style={width > 1008 ? { paddingLeft: 12 } : {}}>
+            <div style={{ display: "flex" }}>
               <img
                 style={{
-                  width: "100%"
+                  width: "90%",
+                  marginLeft: "auto",
+                  marginRight: "auto"
                 }}
                 src={require("../images/sara.jpg")}
                 alt=""

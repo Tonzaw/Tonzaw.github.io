@@ -9,10 +9,10 @@ const ContactForm = (props: { onEmailSent: Function }) => {
     if (null !== form.current && undefined !== form.current) {
       emailjs
         .sendForm(
-          "service_el9n0vo",
-          "template_pmvxzoh",
+          "service_hoo33bp",
+          "template_488xtgi",
           form.current,
-          "bi0ym60REalNHkmzl"
+          "EBzFrxeVh8Vw6S-MK"
         )
         .then(
           (result) => {

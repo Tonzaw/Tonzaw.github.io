@@ -10,7 +10,7 @@ function Terms() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/boudoir/boudoir9.jpg")} />
+      <BannerImage image={require("../images/banner-terms.jpg")} />
       <div
         className="container"
         style={{

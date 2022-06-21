@@ -90,7 +90,7 @@ const Tabs = () => {
             onClick={() => handleClick("tab2")}
             className={activeTab === "tab2" ? "active" : ""}
           >
-            PERHEET JA LAPSET
+            PERHEET JA ODOTUS
           </li>
           <li
             ref={tabNavItem3}
