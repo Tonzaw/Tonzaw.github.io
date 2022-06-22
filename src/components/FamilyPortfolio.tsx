@@ -47,6 +47,10 @@ const FamilyPortfolio = () => {
             rightImage={require("../images/family/family1.jpg")}
           />
           <PortfolioRow
+            leftImage={require("../images/family/family50.jpg")}
+            rightImage={require("../images/family/family52.jpg")}
+          />
+          <PortfolioRow
             leftImage={require("../images/family/family37.jpg")}
             rightImage={require("../images/family/family38.jpg")}
           />
@@ -81,6 +85,22 @@ const FamilyPortfolio = () => {
           <PortfolioRow
             leftImage={require("../images/family/family27.jpg")}
             rightImage={require("../images/family/family28.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/family/family48.jpg")}
+            rightImage={require("../images/family/family44.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/family/family51.jpg")}
+            rightImage={require("../images/family/family45.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/family/family46.jpg")}
+            rightImage={require("../images/family/family49.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/family/family47.jpg")}
+            rightImage={""}
           />
         </div>
       </Slide>

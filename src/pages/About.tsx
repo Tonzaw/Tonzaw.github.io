@@ -48,9 +48,13 @@ function About() {
             >
               <h2>KUKA OLEN?</h2>
               <p
-                style={{
-                  textAlign: "justify"
-                }}
+                style={
+                  width > 1008
+                    ? {
+                        textAlign: "justify"
+                      }
+                    : {}
+                }
               >
                 Ihanaa kun löysit sivuilleni! Sara Tuononen Photographyn takaa
                 löytyy helposti kaikesta innostuva, empaattinen sekä työlleen
@@ -66,9 +70,13 @@ function About() {
                 itsensä lempeämmin, on se sanoinkuvaamattoman palkitsevaa.
               </p>
               <p
-                style={{
-                  textAlign: "justify"
-                }}
+                style={
+                  width > 1008
+                    ? {
+                        textAlign: "justify"
+                      }
+                    : {}
+                }
               >
                 Mitä enemmän vuosia on vierinyt, olen alkanut paremmin
                 ymmärtämään ohikiitävien hetkien arvon, ja sen kuinka kuviin
@@ -79,9 +87,13 @@ function About() {
                 erilaisten tunteiden ja tunnelmien taltioiminen kuviin.
               </p>
               <p
-                style={{
-                  textAlign: "justify"
-                }}
+                style={
+                  width > 1008
+                    ? {
+                        textAlign: "justify"
+                      }
+                    : {}
+                }
               >
                 Kuvaajana olen lempeä ja helposti lähestyttävä, eikä kuvauksia
                 tarvitse yhtään jännittää. Ei tarvitse tietää, miten kameran
