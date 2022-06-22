@@ -12,40 +12,100 @@ const CouplesPortfolio = () => {
       >
         <div>
           <PortfolioRow
-            leftImage={require("../images/couples/couples3.jpg")}
-            rightImage={require("../images/couples/couples2.jpg")}
+            leftImage={require("../images/couples/couples9.jpg")}
+            rightImage={require("../images/couples/couples8.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/couples/couples9.jpg")}
-            rightImage={require("../images/couples/couples10.jpg")}
+            leftImage={require("../images/couples/couples5.jpg")}
+            rightImage={require("../images/couples/couples12.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples11.jpg")}
-            rightImage={require("../images/couples/couples12.jpg")}
+            rightImage={require("../images/couples/couples20.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples21.jpg")}
+            rightImage={require("../images/couples/couples18.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples17.jpg")}
+            rightImage={require("../images/couples/couples22.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples25.jpg")}
+            rightImage={require("../images/couples/couples24.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples27.jpg")}
+            rightImage={require("../images/couples/couples28.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples33.jpg")}
+            rightImage={require("../images/couples/couples34.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples31.jpg")}
+            rightImage={require("../images/couples/couples32.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples35.jpg")}
+            rightImage={require("../images/couples/couples36.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples37.jpg")}
+            rightImage={require("../images/couples/couples38.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples13.jpg")}
             rightImage={require("../images/couples/couples14.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/couples/couples15.jpg")}
-            rightImage={require("../images/couples/couples16.jpg")}
+            leftImage={require("../images/couples/couples39.jpg")}
+            rightImage={require("../images/couples/couples44.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples45.jpg")}
+            rightImage={require("../images/couples/couples42.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples41.jpg")}
+            rightImage={require("../images/couples/couples46.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples7.jpg")}
-            rightImage={require("../images/couples/couples6.jpg")}
-          />
-          <PortfolioRow
-            leftImage={require("../images/couples/couples8.jpg")}
-            rightImage={require("../images/couples/couples18.jpg")}
-          />
-          <PortfolioRow
-            leftImage={require("../images/couples/couples1.jpg")}
             rightImage={require("../images/couples/couples4.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/couples/couples5.jpg")}
+            leftImage={require("../images/couples/couples10.jpg")}
+            rightImage={require("../images/couples/couples15.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples3.jpg")}
+            rightImage={require("../images/couples/couples2.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples19.jpg")}
+            rightImage={require("../images/couples/couples16.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples23.jpg")}
+            rightImage={require("../images/couples/couples26.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples29.jpg")}
+            rightImage={require("../images/couples/couples30.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples43.jpg")}
+            rightImage={require("../images/couples/couples40.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples1.jpg")}
             rightImage={""}
+          />
+          <PortfolioRow
+            leftImage={require("../images/couples/couples47.jpg")}
+            rightImage={require("../images/couples/couples6.jpg")}
           />
         </div>
       </Slide>

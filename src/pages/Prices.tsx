@@ -12,7 +12,7 @@ function Prices() {
   return (
     <div className="page">
       {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/couples/couples18.jpg")} />
+      <BannerImage image={require("../images/banner-prices.jpg")} />
       <div
         className="container"
         style={{

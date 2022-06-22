@@ -11,11 +11,11 @@ import MainLogoSmall from "../components/MainLogoSmall";
 import { usePreloadImages } from "../utils";
 import img1 from "../images/portraits/portrait56.jpg";
 import img2 from "../images/family/family25.jpg";
-import img3 from "../images/couples/couples20.jpg";
+import img3 from "../images/carousel-image3.jpg";
 import img4 from "../images/newborn/newborn3.jpg";
 import img5 from "../images/family/family28.jpg";
 import img6 from "../images/family/family26.jpg";
-import img7 from "../images/couples/couples23.jpg";
+import img7 from "../images/carousel-image7.jpg";
 import img8 from "../images/pets/pets17.jpg";
 
 const preload = [img1, img2, img3, img4, img5, img6, img7, img8];
