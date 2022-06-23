@@ -43,20 +43,16 @@ const BoudoirPortfolio = () => {
             rightImage={require("../images/boudoir/boudoir3.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/boudoir/boudoir11.jpg")}
-            rightImage={require("../images/boudoir/boudoir20.jpg")}
+            leftImage={require("../images/boudoir/boudoir26.jpg")}
+            rightImage={require("../images/boudoir/boudoir21.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/boudoir/boudoir21.jpg")}
+            leftImage={require("../images/boudoir/boudoir24.jpg")}
             rightImage={require("../images/boudoir/boudoir22.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/boudoir/boudoir25.jpg")}
-            rightImage={require("../images/boudoir/boudoir26.jpg")}
-          />
-          <PortfolioRow
             leftImage={require("../images/boudoir/boudoir27.jpg")}
-            rightImage={require("../images/boudoir/boudoir24.jpg")}
+            rightImage={require("../images/boudoir/boudoir25.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/boudoir/boudoir29.jpg")}
@@ -65,6 +61,10 @@ const BoudoirPortfolio = () => {
           <PortfolioRow
             leftImage={require("../images/boudoir/boudoir31.jpg")}
             rightImage={require("../images/boudoir/boudoir32.jpg")}
+          />
+          <PortfolioRow
+            leftImage={require("../images/boudoir/boudoir11.jpg")}
+            rightImage={require("../images/boudoir/boudoir20.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/boudoir/boudoir23.jpg")}

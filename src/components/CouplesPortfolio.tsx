@@ -101,11 +101,11 @@ const CouplesPortfolio = () => {
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples1.jpg")}
-            rightImage={""}
+            rightImage={require("../images/couples/couples6.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/couples/couples47.jpg")}
-            rightImage={require("../images/couples/couples6.jpg")}
+            rightImage={""}
           />
         </div>
       </Slide>

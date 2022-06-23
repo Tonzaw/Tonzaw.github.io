@@ -75,6 +75,10 @@ const PortraitsPortfolio = () => {
             rightImage={require("../images/portraits/portrait52.jpg")}
           />
           <PortfolioRow
+            leftImage={require("../images/portraits/portrait57.jpg")}
+            rightImage={require("../images/portraits/portrait58.jpg")}
+          />
+          <PortfolioRow
             leftImage={require("../images/portraits/portrait44.jpg")}
             rightImage={require("../images/portraits/portrait45.jpg")}
           />
@@ -117,10 +121,6 @@ const PortraitsPortfolio = () => {
           <PortfolioRow
             leftImage={require("../images/portraits/portrait7.jpg")}
             rightImage={""}
-          />
-          <PortfolioRow
-            leftImage={require("../images/portraits/portrait57.jpg")}
-            rightImage={require("../images/portraits/portrait58.jpg")}
           />
         </div>
       </Slide>
