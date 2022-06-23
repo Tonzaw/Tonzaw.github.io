@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.18f4ccec.css",
-    "main.js": "/static/js/main.ce031797.js",
+    "main.js": "/static/js/main.10a065ff.js",
     "static/js/787.c75175ec.chunk.js": "/static/js/787.c75175ec.chunk.js",
     "static/media/family25.jpg": "/static/media/family25.f25b5928b33c79be64f4.jpg",
     "static/media/family26.jpg": "/static/media/family26.ebca0c799c3deaca6939.jpg",
@@ -257,7 +257,6 @@
     "static/media/couples35.jpg": "/static/media/couples35.e83a72a546dd72c195f4.jpg",
     "static/media/newborn14.jpg": "/static/media/newborn14.ca383510ccbc47ae1b9f.jpg",
     "static/media/portrait3.jpg": "/static/media/portrait3.9723d53d24531858fb95.jpg",
-    "static/media/boudoir6.jpg": "/static/media/boudoir6.088b61418a1cf7632d72.jpg",
     "static/media/boudoir15.jpg": "/static/media/boudoir15.5d4b3af2fc4a8363fc25.jpg",
     "static/media/boudoir26.jpg": "/static/media/boudoir26.6cdc93745463e7a02346.jpg",
     "static/media/family2.jpg": "/static/media/family2.d294f6891366082e5fb8.jpg",
@@ -269,7 +268,6 @@
     "static/media/boudoir14.jpg": "/static/media/boudoir14.7aaa2df99fb686bd967c.jpg",
     "static/media/portrait54.jpg": "/static/media/portrait54.028fea625130b6eda9f8.jpg",
     "static/media/companies17.jpg": "/static/media/companies17.454182d439ea1415818a.jpg",
-    "static/media/boudoir10.jpg": "/static/media/boudoir10.23b146054481a6701447.jpg",
     "static/media/Antonio-Bold.ttf": "/static/media/Antonio-Bold.7c89038493d2f1ce9ce6.ttf",
     "static/media/ig.svg": "/static/media/ig.1f65b50804e539381873f65d35ebbd1e.svg",
     "static/media/fail.svg": "/static/media/fail.79e43fb2dcf175c5da28d858283de372.svg",
@@ -279,11 +277,11 @@
     "static/media/minus.svg": "/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
     "main.18f4ccec.css.map": "/static/css/main.18f4ccec.css.map",
-    "main.ce031797.js.map": "/static/js/main.ce031797.js.map",
+    "main.10a065ff.js.map": "/static/js/main.10a065ff.js.map",
     "787.c75175ec.chunk.js.map": "/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18f4ccec.css",
-    "static/js/main.ce031797.js"
+    "static/js/main.10a065ff.js"
   ]
 }
