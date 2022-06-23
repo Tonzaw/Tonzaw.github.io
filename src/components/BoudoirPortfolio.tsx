@@ -11,16 +11,12 @@ const BoudoirPortfolio = () => {
             rightImage={require("../images/boudoir/boudoir5.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/boudoir/boudoir6.jpg")}
+            leftImage={require("../images/boudoir/boudoir9.jpg")}
             rightImage={require("../images/boudoir/boudoir7.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/boudoir/boudoir8.jpg")}
             rightImage={require("../images/boudoir/boudoir12.jpg")}
-          />
-          <PortfolioRow
-            leftImage={require("../images/boudoir/boudoir9.jpg")}
-            rightImage={require("../images/boudoir/boudoir10.jpg")}
           />
           <PortfolioRow
             leftImage={require("../images/boudoir/boudoir13.jpg")}
