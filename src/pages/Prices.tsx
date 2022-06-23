@@ -26,7 +26,7 @@ function Prices() {
           kuvausvaihtoehdot. Mikäli toivomaasi kuvausta ei löydy tarjonnastani,
           kysythän siitä erikseen minulta. Tapahtumat ja tilaisuudet
           hinnoitellaan aina yksilöllisesti asiakkaan tarpeiden mukaan. Kuvausta
-          varatessa laskutan sinulta kuvausmaksu osuuden, joka toimii
+          varatessa laskutan sinulta kuvausmaksun, joka toimii
           varausvahvistuksena ja kuvausehtojeni hyväksymisenä. Luethan
           kuvausehtosopimukseni{" "}
           <Link className="link" to={"/terms"}>

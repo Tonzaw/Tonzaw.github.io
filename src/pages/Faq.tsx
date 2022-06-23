@@ -55,7 +55,7 @@ function Faq() {
           <li>
             <FaqItem
               title="Miten kannattaa pukeutua kuvauksiin?"
-              content="Kuvauksissa tärkeintä on pukea juuri sellaiset vaatteet, mitkä saavat olosi itsevarmsksi ja hyväksi. 
+              content="Kuvauksissa tärkeintä on pukea juuri sellaiset vaatteet, mitkä saavat olosi itsevarmaksi ja hyväksi. 
               Yleisinä vinkkeinä suosittelen maanläheisiä, vaaleita ja neutraaleja värejä, sillä ne toimivat aina. Printtejä tai kuviollisia vaatteita en suosittele, sillä ne vetävät usein huomion liikaa puoleensa. Jos tulet vaikkapa kumppanin tai perheen kanssa kuvauksiin, kannattaa miettiä vaatteiden ja värien yhteensointuvuutta. Liehuvat helmat, hengittävät ja väljät kankaat ja erilaiset tekstuurit vaikkapa farkuissa tai muhkeissa villapaidoissa näyttävät kuvissa hyvältä. Yksinkertaisuus toimii aina hyvin. Mikäli kaipaat apua asuvalinnassa, voit aina ottaa minuun yhteyttä asiaan liittyen, niin voimme yhdessä ideoida. Nämä ovat kuitenkin vain vinkkejä, eli itse saat tietenkin päättää mikä miellyttää sinua eniten.
               "
             />
@@ -88,7 +88,7 @@ function Faq() {
             <FaqItem
               title="Milloin on hyvä aika odotuskuvauksille? Entä vastasyntyneen kuvaukselle?"
               content="Usein suositellaan, että odotuskuvat otettaisiin raskausviikoilla 30-36. Tällöin vatsa alkaa olla suloisen pyöreä, eikä olo vielä välttämättä niin tukala kuin viimeisillä viikoilla. Tähänkään ei ole kuitenkaan oikeaa tai väärää vastausta, eli voit varata odotuskuvauksen juuri silloin kun itse sen koet parhaaksi. Ihan loppuun ei kannata kuvausta jättää, jottei käy niin että vauva ehtiikin syntyä ennen kuvausta.
-              Vastasyntyneen kuvaus toteutetaan vauvan kahden ensimmäisen elinviikon aikana."
+              Vastasyntyneen kuvaus toteutetaan kahden viikon sisällä vauvan syntymästä."
             />
           </li>
           <li>
