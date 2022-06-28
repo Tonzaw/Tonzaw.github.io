@@ -159,6 +159,8 @@ function App() {
       </div>
       <div style={{ minHeight: "100vh" }}>
         <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
+          <h1>SARA TUONONEN</h1>
+          <h2>PORTFOLIO</h2>
           <Tabs />
         </Element>
       </div>

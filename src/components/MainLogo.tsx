@@ -21,14 +21,14 @@ const MainLogo = (props: { size: string }) => {
         {props.size === "big" && (
           <img
             src={require("../images/icons/sara-logo2.png")}
-            alt=""
+            alt="Sara Tuononen Photography"
             style={{ height: "auto", width: 200 }}
           />
         )}
         {props.size === "medium" && (
           <img
             src={require("../images/icons/sara-logo2.png")}
-            alt=""
+            alt="Sara Tuononen Photography"
             style={{ height: "auto", width: 150 }}
           />
         )}

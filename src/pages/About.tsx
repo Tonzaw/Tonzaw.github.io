@@ -129,7 +129,7 @@ function About() {
                   marginRight: "auto"
                 }}
                 src={require("../images/sara.jpg")}
-                alt=""
+                alt="Sara Tuononen Valokuvaaja"
               />
             </div>
           </div>
