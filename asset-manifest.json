@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbaf37fe.css",
-    "main.js": "/static/js/main.193a3f50.js",
+    "main.css": "/static/css/main.e7079c80.css",
+    "main.js": "/static/js/main.a66916f4.js",
     "static/js/787.c75175ec.chunk.js": "/static/js/787.c75175ec.chunk.js",
-    "static/media/family25.jpg": "/static/media/family25.f25b5928b33c79be64f4.jpg",
-    "static/media/family26.jpg": "/static/media/family26.ebca0c799c3deaca6939.jpg",
     "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.5af085244ab6774c0fd9.ttf",
-    "static/media/carousel-image3.jpg": "/static/media/carousel-image3.93fd4d9fa3f7d61626eb.jpg",
-    "static/media/carousel-image7.jpg": "/static/media/carousel-image7.500bc3747defc1628378.jpg",
     "static/media/companies14.jpg": "/static/media/companies14.5b52b3ab965fd4d6d270.jpg",
+    "static/media/carousel-image7.jpg": "/static/media/carousel-image7.b7173330cdcdd0f0f819.jpg",
     "static/media/family27.jpg": "/static/media/family27.ef87ff97053fe957cb52.jpg",
     "static/media/family41.jpg": "/static/media/family41.e60e5584b3f277cae37c.jpg",
     "static/media/companies12.jpg": "/static/media/companies12.8c9ff85f2e558c2dd6f3.jpg",
@@ -21,11 +18,14 @@
     "static/media/portrait56.jpg": "/static/media/portrait56.2ccb4bd9457005674947.jpg",
     "static/media/companies10.jpg": "/static/media/companies10.d27ec176ae7cfe26141f.jpg",
     "static/media/couples10.jpg": "/static/media/couples10.d5ad368a09d33c04338a.jpg",
+    "static/media/carousel-image3.jpg": "/static/media/carousel-image3.c3df241768aee69b2538.jpg",
     "static/media/couples7.jpg": "/static/media/couples7.6e32c2d1cdf1e92a9168.jpg",
     "static/media/family36.jpg": "/static/media/family36.1cd93e981095c27256aa.jpg",
+    "static/media/family25.jpg": "/static/media/family25.5e04f2b5578929652822.jpg",
     "static/media/companies21.jpg": "/static/media/companies21.944bea5ff2b2869696d9.jpg",
     "static/media/companies8.jpg": "/static/media/companies8.ed5075ff3d446cce802c.jpg",
     "static/media/companies3.jpg": "/static/media/companies3.1032873cd6baf874b949.jpg",
+    "static/media/family26.jpg": "/static/media/family26.984be444999673360d20.jpg",
     "static/media/companies22.jpg": "/static/media/companies22.0fb046c9337551a59476.jpg",
     "static/media/companies11.jpg": "/static/media/companies11.538a74643973e60c0f56.jpg",
     "static/media/companies27.jpg": "/static/media/companies27.f879ec6b33b954d726a7.jpg",
@@ -269,19 +269,19 @@
     "static/media/portrait54.jpg": "/static/media/portrait54.028fea625130b6eda9f8.jpg",
     "static/media/companies17.jpg": "/static/media/companies17.454182d439ea1415818a.jpg",
     "static/media/Antonio-Bold.ttf": "/static/media/Antonio-Bold.7c89038493d2f1ce9ce6.ttf",
-    "static/media/ig.svg": "/static/media/ig.1f65b50804e539381873f65d35ebbd1e.svg",
+    "static/media/ig.svg": "/static/media/ig.a324af17cbc86f73eb045a0913be731f.svg",
     "index.html": "/index.html",
     "static/media/fail.svg": "/static/media/fail.79e43fb2dcf175c5da28d858283de372.svg",
     "static/media/plus.svg": "/static/media/plus.6a72864cea331ea4595a2c2eb597549c.svg",
     "static/media/checkmark.svg": "/static/media/checkmark.157a9f5fd6c46bb963cbf123fdf8470d.svg",
     "static/media/minus.svg": "/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
-    "main.cbaf37fe.css.map": "/static/css/main.cbaf37fe.css.map",
-    "main.193a3f50.js.map": "/static/js/main.193a3f50.js.map",
+    "main.e7079c80.css.map": "/static/css/main.e7079c80.css.map",
+    "main.a66916f4.js.map": "/static/js/main.a66916f4.js.map",
     "787.c75175ec.chunk.js.map": "/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbaf37fe.css",
-    "static/js/main.193a3f50.js"
+    "static/css/main.e7079c80.css",
+    "static/js/main.a66916f4.js"
   ]
 }
