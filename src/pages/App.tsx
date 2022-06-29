@@ -17,11 +17,13 @@ import img5 from "../images/family/family28.jpg";
 import img6 from "../images/family/family26.jpg";
 import img7 from "../images/carousel-image7.jpg";
 import img8 from "../images/pets/pets17.jpg";
+import { useState } from "react";
 
 const preload = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 function App() {
   const { width } = useWindowDimensions();
+  const [loading, setLoading] = useState(true);
   usePreloadImages(preload);
 
   return (
@@ -92,7 +94,7 @@ function App() {
           }
         >
           <div>
-            <img src={img1} alt="" />
+            <img src={img1} alt="" onLoad={() => setLoading(false)} />
           </div>
           <div>
             <img src={img2} alt="" />
@@ -116,7 +118,7 @@ function App() {
             <img src={img8} alt="" />
           </div>
         </Carousel>
-        {width >= 1206 ? (
+        {width >= 1206 && !loading ? (
           <Link
             to="portfolio"
             spy={true}
@@ -157,14 +159,19 @@ function App() {
           ""
         )}
       </div>
-      <div style={{ minHeight: "100vh" }}>
-        <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
-          <h1>SARA TUONONEN</h1>
-          <h2>PORTFOLIO</h2>
-          <Tabs />
-        </Element>
-      </div>
-      <Footer2 />
+
+      {!loading && (
+        <div>
+          <div style={{ minHeight: "100vh" }}>
+            <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
+              <h1>SARA TUONONEN</h1>
+              <h2>PORTFOLIO</h2>
+              <Tabs />
+            </Element>
+          </div>
+          <Footer2 />
+        </div>
+      )}
     </div>
   );
 }
