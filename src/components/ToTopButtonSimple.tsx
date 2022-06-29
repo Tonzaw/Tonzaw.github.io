@@ -7,7 +7,11 @@ const goToTop = () => {
 };
 const ToTopButtonSimple = () => {
   return (
-    <button className="toTopButtonSimple" onClick={goToTop}>
+    <button
+      className="toTopButtonSimple"
+      aria-label="Back to top"
+      onClick={goToTop}
+    >
       <Up
         fill="#ffffff"
         stroke="#ffffff"
