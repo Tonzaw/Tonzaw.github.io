@@ -39,7 +39,7 @@ const Footer = () => {
         +358 41 5328222
       </p>
       <a
-        href="https://instagram.com/saratuononen_photography"
+        href="http://instagram.com/_u/saratuononen_photography/"
         target="_blank"
         rel="noreferrer"
         style={{
