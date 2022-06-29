@@ -1,7 +1,7 @@
 import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
@@ -171,7 +171,7 @@ function Terms() {
         </p>
         <p>© Sara Tuononen Photography</p>
       </div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
 import FaqItem from "../components/FaqItem";
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
@@ -99,7 +99,7 @@ function Faq() {
           </li>
         </ul>
       </div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }

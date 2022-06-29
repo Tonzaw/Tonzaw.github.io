@@ -2,7 +2,7 @@ import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
 import BurgerMenu from "../components/BurgerMenu";
 import Feedback from "../components/Feedback";
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import "../css/App.css";
 
@@ -229,7 +229,7 @@ function About() {
           />
         </div>
       </div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }

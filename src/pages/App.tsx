@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import MenuBar from "../components/MenuBar";
 import { Element, Link } from "react-scroll";
 import Tabs from "../components/Tabs";
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import { useWindowDimensions } from "../common";
 import BurgerMenu from "../components/BurgerMenu";
 import MainLogoSmall from "../components/MainLogoSmall";
@@ -169,7 +169,7 @@ function App() {
               <Tabs />
             </Element>
           </div>
-          <Footer2 />
+          <Footer />
         </div>
       )}
     </div>

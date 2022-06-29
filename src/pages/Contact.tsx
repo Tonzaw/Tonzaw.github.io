@@ -1,4 +1,4 @@
-import Footer2 from "../components/Footer2";
+import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import ContactForm from "../components/ContactForm";
 import "../css/App.css";
@@ -142,7 +142,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }

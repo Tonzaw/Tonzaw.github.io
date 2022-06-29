@@ -1,64 +1,94 @@
+import { useWindowDimensions } from "../common";
 import "../css/App.css";
+import { ReactComponent as Instagram } from "../images/icons/ig.svg";
+import ToTopButtonSimple from "./ToTopButtonSimple";
 
 const Footer = () => {
+  const { width } = useWindowDimensions();
   return (
-    <div className="container" style={{ height: 180, textAlign: "center" }}>
-      <div
-        style={{
-          background: "#272727",
-          height: 1
-        }}
-      ></div>
-      <h3 style={{ letterSpacing: "0.2rem", marginBottom: 16 }}>
-        YHTEYSTIEDOT
-      </h3>
-      <a
-        href="mailto:saratuononen.photography@gmail.com"
-        style={{
-          flex: 1,
-          color: "#272727",
-          fontSize: "0.75rem",
-          letterSpacing: "0.15em",
-          textDecoration: "none",
-          fontWeight: "bold",
-          marginBottom: 16
-        }}
-      >
-        SARATUONONEN.PHOTOGRAPHY@GMAIL.COM
-      </a>
-      <p
-        style={{
-          flex: 1,
-          color: "#272727",
-          fontSize: "0.8rem",
-          letterSpacing: "0.15em",
-          fontWeight: "bold",
-          marginBottom: 16
-        }}
-      >
-        +358 41 5328222
-      </p>
-      <a
-        href="http://instagram.com/_u/saratuononen_photography/"
-        target="_blank"
-        rel="noreferrer"
-        style={{
-          flex: 1,
-          color: "#272727",
-          fontSize: "0.75rem",
-          letterSpacing: "0.15em",
-          textDecoration: "none",
-          fontWeight: "bold",
-          marginBottom: 16
-        }}
-      >
-        <img
-          src={require("../images/icons/instagram.png")}
-          alt=""
-          style={{ height: 20, width: 20 }}
-        />
-      </a>
-    </div>
+    <footer
+      style={{ height: "auto", textAlign: "left", background: "#425664" }}
+    >
+      <div className="container" style={{ display: "flex" }}>
+        <div style={{ flex: "1" }}></div>
+        <div
+          style={{
+            flex: "1",
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "center"
+          }}
+        >
+          <p
+            style={{
+              letterSpacing: "0.15rem",
+              marginBottom: 16,
+              color: "white",
+              flex: "1"
+            }}
+          >
+            YHTEYSTIEDOT
+          </p>
+          <a
+            href="mailto:saratuononen.photography@gmail.com"
+            style={{
+              flex: 1,
+              fontSize: "0.75rem",
+              letterSpacing: "0.15em",
+              textDecoration: "none",
+              color: "white"
+            }}
+          >
+            SARATUONONEN.PHOTOGRAPHY
+            {width > 768 ? "" : <wbr />}
+            @GMAIL.COM
+          </a>
+          <p
+            style={{
+              flex: 1,
+              fontSize: "0.8rem",
+              letterSpacing: "0.15em",
+              color: "white"
+            }}
+          >
+            +358 41 5328222
+          </p>
+          <div
+            style={{
+              flex: 1
+            }}
+          >
+            <a
+              href="https://instagram.com/saratuononen_photography"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram
+                fill="#ffffff"
+                stroke="#ffffff"
+                style={{
+                  height: 32,
+                  width: 32,
+                  alignSelf: "center"
+                }}
+              />
+            </a>
+          </div>
+          <p
+            style={{
+              color: "white",
+              fontSize: 12,
+              flex: 1
+            }}
+          >
+            © 2022 Sara Tuononen
+          </p>
+        </div>
+        <div style={{ flex: "1" }}>
+          {width > 768 ? <ToTopButtonSimple /> : ""}
+        </div>
+      </div>
+    </footer>
   );
 };
 
