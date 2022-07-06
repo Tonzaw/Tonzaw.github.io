@@ -17,11 +17,7 @@ const MainLogoSmall = () => {
         <img
           src={require("../images/icons/sara-logo2.png")}
           alt=""
-          style={
-            width > 470
-              ? { height: "auto", width: 150 }
-              : { height: "auto", width: 90 }
-          }
+          style={{ height: "auto", width: 90 }}
         />
       </Link>
     </div>

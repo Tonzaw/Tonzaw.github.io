@@ -28,7 +28,13 @@ function App() {
   return (
     <div className="App page">
       {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
-      <div style={{ position: "relative", paddingTop: 100 }}>
+      <div
+        style={
+          width > 768
+            ? { position: "relative" }
+            : { position: "relative", paddingTop: 100 }
+        }
+      >
         <Carousel
           className="Carousel"
           autoPlay
