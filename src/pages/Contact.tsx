@@ -5,8 +5,8 @@ import "../css/App.css";
 import { useWindowDimensions } from "../common";
 import EmailSent from "../components/EmailSent";
 import { useState } from "react";
-import BurgerMenu from "../components/BurgerMenu";
 import BannerImage from "../components/BannerImage";
+import StickyHeader from "../components/StickyHeader";
 
 function Contact() {
   const [emailSent, setEmailSent] = useState(false);
@@ -29,8 +29,14 @@ function Contact() {
 
   return (
     <div className="page">
-      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+      {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
+      {width > 768 ? (
+        <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+      ) : (
+        <div style={{ position: "relative", paddingTop: 100 }}>
+          <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+        </div>
+      )}
       <div
         className="container"
         style={{

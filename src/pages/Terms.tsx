@@ -1,16 +1,22 @@
 import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
-import BurgerMenu from "../components/BurgerMenu";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
+import StickyHeader from "../components/StickyHeader";
 import "../css/App.css";
 
 function Terms() {
   const { width } = useWindowDimensions();
   return (
     <div className="page">
-      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/banner-terms.jpg")} />
+      {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
+      {width > 768 ? (
+        <BannerImage image={require("../images/banner-terms.jpg")} />
+      ) : (
+        <div style={{ position: "relative", paddingTop: 100 }}>
+          <BannerImage image={require("../images/banner-terms.jpg")} />
+        </div>
+      )}
       <div
         className="container"
         style={{

@@ -6,8 +6,6 @@ import { Element, Link } from "react-scroll";
 import Tabs from "../components/Tabs";
 import Footer from "../components/Footer";
 import { useWindowDimensions } from "../common";
-import BurgerMenu from "../components/BurgerMenu";
-import MainLogoSmall from "../components/MainLogoSmall";
 import { usePreloadImages } from "../utils";
 import img1 from "../images/portraits/portrait56.jpg";
 import img2 from "../images/family/family25.jpg";
@@ -18,6 +16,7 @@ import img6 from "../images/family/family26.jpg";
 import img7 from "../images/carousel-image7.jpg";
 import img8 from "../images/pets/pets17.jpg";
 import { useState } from "react";
+import StickyHeader from "../components/StickyHeader";
 
 const preload = [img1, img2, img3, img4, img5, img6, img7, img8];
 
@@ -28,9 +27,8 @@ function App() {
 
   return (
     <div className="App page">
-      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      {width > 768 ? "" : <MainLogoSmall />}
-      <div style={{ position: "relative" }}>
+      {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
+      <div style={{ position: "relative", paddingTop: 100 }}>
         <Carousel
           className="Carousel"
           autoPlay

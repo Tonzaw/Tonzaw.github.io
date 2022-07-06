@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
 import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
-import BurgerMenu from "../components/BurgerMenu";
 import MenuBar from "../components/MenuBar";
+import StickyHeader from "../components/StickyHeader";
 
 function NoPage() {
   const { width } = useWindowDimensions();
   return (
     <div className="page">
-      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+      {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
+      {width > 768 ? (
+        <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+      ) : (
+        <div style={{ position: "relative", paddingTop: 100 }}>
+          <BannerImage image={require("../images/newborn/newborn1.jpg")} />
+        </div>
+      )}
       <div className="container">
         <Link
           style={{

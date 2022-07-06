@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useWindowDimensions } from "../common";
 
 const MainLogoSmall = () => {
@@ -5,22 +6,24 @@ const MainLogoSmall = () => {
   return (
     <div
       style={{
-        float: "left",
-        margin: 16,
-        width: "auto",
-        position: "absolute",
-        zIndex: 998
+        marginTop: 16,
+        width: "100%",
+        position: "fixed",
+        zIndex: 998,
+        textAlign: "center"
       }}
     >
-      <img
-        src={require("../images/icons/sara-logo2.png")}
-        alt=""
-        style={
-          width > 470
-            ? { height: "auto", width: 150 }
-            : { height: "auto", width: 90 }
-        }
-      />
+      <Link to={"/"}>
+        <img
+          src={require("../images/icons/sara-logo2.png")}
+          alt=""
+          style={
+            width > 470
+              ? { height: "auto", width: 150 }
+              : { height: "auto", width: 90 }
+          }
+        />
+      </Link>
     </div>
   );
 };

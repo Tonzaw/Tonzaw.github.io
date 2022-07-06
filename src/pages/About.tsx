@@ -1,17 +1,23 @@
 import { useWindowDimensions } from "../common";
 import BannerImage from "../components/BannerImage";
-import BurgerMenu from "../components/BurgerMenu";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
+import StickyHeader from "../components/StickyHeader";
 import "../css/App.css";
 
 function About() {
   const { width } = useWindowDimensions();
   return (
     <div className="page">
-      {width > 768 ? <MenuBar transparent={true} /> : <BurgerMenu />}
-      <BannerImage image={require("../images/banner-about.jpg")} />
+      {width > 768 ? <MenuBar transparent={true} /> : <StickyHeader />}
+      {width > 768 ? (
+        <BannerImage image={require("../images/banner-about.jpg")} />
+      ) : (
+        <div style={{ position: "relative", paddingTop: 100 }}>
+          <BannerImage image={require("../images/banner-about.jpg")} />
+        </div>
+      )}
       <div
         className="container"
         style={{

@@ -1,14 +1,15 @@
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import { primaryColor, secondaryColor } from "../styles/colors";
+import { ReactComponent as BurgerIcon } from "../images/icons/burger.svg";
 
 const styles = {
   bmBurgerButton: {
     position: "fixed",
-    width: "36px",
-    height: "30px",
-    right: "36px",
-    top: "36px"
+    width: "50px",
+    height: "50px",
+    right: "24px",
+    top: "24px"
   },
   bmBurgerBars: {
     background: primaryColor
@@ -19,8 +20,8 @@ const styles = {
   bmCrossButton: {
     height: "26px",
     width: "26px",
-    right: "24px",
-    top: "24px"
+    right: "36px",
+    top: "36px"
   },
   bmCross: {},
   bmMenuWrap: {
@@ -55,6 +56,7 @@ function BurgerMenu() {
           style={{ height: 26, width: 26 }}
         />
       }
+      customBurgerIcon={<BurgerIcon />}
     >
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div
