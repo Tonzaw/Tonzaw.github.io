@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e7079c80.css",
-    "main.js": "/static/js/main.e16f20a2.js",
+    "main.js": "/static/js/main.a8268427.js",
     "static/js/787.c75175ec.chunk.js": "/static/js/787.c75175ec.chunk.js",
     "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.5af085244ab6774c0fd9.ttf",
     "static/media/companies14.jpg": "/static/media/companies14.5b52b3ab965fd4d6d270.jpg",
@@ -278,11 +278,11 @@
     "static/media/minus.svg": "/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
     "main.e7079c80.css.map": "/static/css/main.e7079c80.css.map",
-    "main.e16f20a2.js.map": "/static/js/main.e16f20a2.js.map",
+    "main.a8268427.js.map": "/static/js/main.a8268427.js.map",
     "787.c75175ec.chunk.js.map": "/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7079c80.css",
-    "static/js/main.e16f20a2.js"
+    "static/js/main.a8268427.js"
   ]
 }
