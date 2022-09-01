@@ -46,8 +46,12 @@ function Contact() {
       >
         <h2 style={{ marginTop: 24 }}>YHTEYSTIEDOT</h2>
         <p>
-          Huom, olen poissa Suomesta kesä-heinäkuun 2022. Tiedustele vapaita
-          kuvausaikoja alla olevan yhteydenottolomakkeen kautta.{" "}
+          <b>HUOM!</b> Asun väliaikaisesti Qatarissa, joten en voi juuri tällä
+          hetkellä valitettavasti vastaanottaa kuvauspyyntöjä Suomessa.
+        </p>
+        <p>
+          Tiedustele vapaita kuvausaikoja alla olevan yhteydenottolomakkeen
+          kautta.{" "}
           <b>Kuvauksia voi varata Turun seudulle sekä pääkaupunkiseudulle.</b>{" "}
           Seuraile instagramin puolella tiedottelua mahdollisesti vapautuvista
           kuvausajoista ja muista ajankohtaisista asioista! Kerro viestissäsi

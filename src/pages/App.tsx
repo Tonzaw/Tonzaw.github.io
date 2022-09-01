@@ -169,6 +169,11 @@ function App() {
           <div style={{ minHeight: "100vh" }}>
             <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
               <h1>SARA TUONONEN</h1>
+              <p>
+                <b>HUOM!</b> Asun väliaikaisesti Qatarissa, joten en voi juuri
+                tällä hetkellä valitettavasti vastaanottaa kuvauspyyntöjä
+                Suomessa.
+              </p>
               <h2>PORTFOLIO</h2>
               <Tabs />
             </Element>
