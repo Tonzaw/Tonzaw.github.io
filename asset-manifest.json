@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e7079c80.css",
-    "main.js": "/static/js/main.a8268427.js",
+    "main.js": "/static/js/main.e9f1c11d.js",
     "static/js/787.c75175ec.chunk.js": "/static/js/787.c75175ec.chunk.js",
     "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.5af085244ab6774c0fd9.ttf",
     "static/media/companies14.jpg": "/static/media/companies14.5b52b3ab965fd4d6d270.jpg",
@@ -18,7 +18,6 @@
     "static/media/portrait56.jpg": "/static/media/portrait56.2ccb4bd9457005674947.jpg",
     "static/media/companies10.jpg": "/static/media/companies10.d27ec176ae7cfe26141f.jpg",
     "static/media/couples10.jpg": "/static/media/couples10.d5ad368a09d33c04338a.jpg",
-    "static/media/carousel-image3.jpg": "/static/media/carousel-image3.c3df241768aee69b2538.jpg",
     "static/media/couples7.jpg": "/static/media/couples7.6e32c2d1cdf1e92a9168.jpg",
     "static/media/family36.jpg": "/static/media/family36.1cd93e981095c27256aa.jpg",
     "static/media/family25.jpg": "/static/media/family25.5e04f2b5578929652822.jpg",
@@ -34,7 +33,6 @@
     "static/media/family33.jpg": "/static/media/family33.598940bcee8800baa4a2.jpg",
     "static/media/newborn8.jpg": "/static/media/newborn8.9bfb18be3e03f373dbde.jpg",
     "static/media/companies7.jpg": "/static/media/companies7.f34b2f273430c6672f58.jpg",
-    "static/media/couples3.jpg": "/static/media/couples3.9a83657bafbe249c62d0.jpg",
     "static/media/companies31.jpg": "/static/media/companies31.af18e181e4d976e28bb3.jpg",
     "static/media/companies28.jpg": "/static/media/companies28.a47b7b0f22ca48e452ab.jpg",
     "static/media/pets4.jpg": "/static/media/pets4.5ab6c94271e26ffb80cc.jpg",
@@ -139,7 +137,6 @@
     "static/media/boudoir13.jpg": "/static/media/boudoir13.60ccc7d7897b0adc4c93.jpg",
     "static/media/couples20.jpg": "/static/media/couples20.0fa8f785e2599ff01993.jpg",
     "static/media/companies6.jpg": "/static/media/companies6.2a97a5199bace2c43b59.jpg",
-    "static/media/couples2.jpg": "/static/media/couples2.f2fd6c73fdc6dd421256.jpg",
     "static/media/couples15.jpg": "/static/media/couples15.d7e5313abcd32fb5355f.jpg",
     "static/media/couples8.jpg": "/static/media/couples8.a97e4b77d6d166734dcb.jpg",
     "static/media/boudoir11.jpg": "/static/media/boudoir11.219dee1c949d4db37957.jpg",
@@ -278,11 +275,11 @@
     "static/media/minus.svg": "/static/media/minus.919ad2773b2b7749c07755fd22244885.svg",
     "static/media/up.svg": "/static/media/up.074c57bf21589b23bdafb58c1fec607f.svg",
     "main.e7079c80.css.map": "/static/css/main.e7079c80.css.map",
-    "main.a8268427.js.map": "/static/js/main.a8268427.js.map",
+    "main.e9f1c11d.js.map": "/static/js/main.e9f1c11d.js.map",
     "787.c75175ec.chunk.js.map": "/static/js/787.c75175ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7079c80.css",
-    "static/js/main.a8268427.js"
+    "static/js/main.e9f1c11d.js"
   ]
 }
