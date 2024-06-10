@@ -9,7 +9,6 @@ import { useWindowDimensions } from "../common";
 import { usePreloadImages } from "../utils";
 import img1 from "../images/portraits/portrait56.jpg";
 import img2 from "../images/family/family25.jpg";
-import img3 from "../images/carousel-image3.jpg";
 import img4 from "../images/newborn/newborn3.jpg";
 import img5 from "../images/family/family28.jpg";
 import img6 from "../images/family/family26.jpg";
@@ -18,7 +17,7 @@ import img8 from "../images/pets/pets17.jpg";
 import { useState } from "react";
 import StickyHeader from "../components/StickyHeader";
 
-const preload = [img1, img2, img3, img4, img5, img6, img7, img8];
+const preload = [img1, img2, img4, img5, img6, img7, img8];
 
 function App() {
   const { width } = useWindowDimensions();
@@ -104,9 +103,6 @@ function App() {
             <img src={img2} alt="" />
           </div>
           <div>
-            <img src={img3} alt="" />
-          </div>
-          <div>
             <img src={img4} alt="" />
           </div>
           <div>
@@ -169,11 +165,6 @@ function App() {
           <div style={{ minHeight: "100vh" }}>
             <Element name="portfolio" id="portfolio" style={{ paddingTop: 24 }}>
               <h1>SARA TUONONEN</h1>
-              <p>
-                <b>HUOM!</b> Asun väliaikaisesti Qatarissa, joten en voi juuri
-                tällä hetkellä valitettavasti vastaanottaa kuvauspyyntöjä
-                Suomessa.
-              </p>
               <h2>PORTFOLIO</h2>
               <Tabs />
             </Element>

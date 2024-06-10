@@ -46,10 +46,6 @@ function Contact() {
       >
         <h2 style={{ marginTop: 24 }}>YHTEYSTIEDOT</h2>
         <p>
-          <b>HUOM!</b> Asun väliaikaisesti Qatarissa, joten en voi juuri tällä
-          hetkellä valitettavasti vastaanottaa kuvauspyyntöjä Suomessa.
-        </p>
-        <p>
           Tiedustele vapaita kuvausaikoja alla olevan yhteydenottolomakkeen
           kautta.{" "}
           <b>Kuvauksia voi varata Turun seudulle sekä pääkaupunkiseudulle.</b>{" "}

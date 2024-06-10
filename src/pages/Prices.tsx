@@ -39,8 +39,7 @@ function Prices() {
             täältä
           </Link>{" "}
           ennen kuvauksen varaamista. Kuvausmaksu sisältää kuvauksen
-          suunnittelun, tunnin kuvausajan (newborn-kuvaus 2 tuntia) sekä
-          esivalintagallerian. Kuvapaketti ostetaan erikseen kuvauksen jälkeen.
+          suunnittelun sekä tunnin kuvausajan (newborn-kuvaus 2 tuntia).
         </p>
         <div
           style={{
@@ -68,43 +67,14 @@ function Prices() {
                 fontWeight: "bold"
               }}
             >
-              ENNEN KUVAUSTA:
+              Kaikki kuvaukset 300€
             </p>
             <p
               style={{
                 textAlign: "center"
               }}
             >
-              KUVAUSMAKSU 100€
-            </p>
-            <p
-              style={{
-                textAlign: "center",
-                fontWeight: "bold"
-              }}
-            >
-              KUVAUKSEN JÄLKEEN:
-            </p>
-            <p
-              style={{
-                textAlign: "center"
-              }}
-            >
-              10 KUVAA 50€
-            </p>
-            <p
-              style={{
-                textAlign: "center"
-              }}
-            >
-              20 KUVAA 80€
-            </p>
-            <p
-              style={{
-                textAlign: "center"
-              }}
-            >
-              KOKO GALLERIA 120€
+              Sisältää n.70-150 kuvan kokoisen gallerian
             </p>
             <p
               style={{
@@ -112,7 +82,7 @@ function Prices() {
                 fontSize: 14
               }}
             >
-              (Kaikki hinnat sisältävät alv. 24%.)
+              (Hinnat sisältävät arvolisäveron.)
             </p>
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <input type="submit" value="VARAA NYT" className="formInput" />

@@ -80,10 +80,6 @@ const CouplesPortfolio = () => {
             rightImage={require("../images/couples/couples15.jpg")}
           />
           <PortfolioRow
-            leftImage={require("../images/couples/couples3.jpg")}
-            rightImage={require("../images/couples/couples2.jpg")}
-          />
-          <PortfolioRow
             leftImage={require("../images/couples/couples19.jpg")}
             rightImage={require("../images/couples/couples16.jpg")}
           />
